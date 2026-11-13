@@ -38,7 +38,7 @@ export type Order = {
 export type Enquiry = {
   id: string;
   date: string;
-  type: "Marine" | "Real Estate" | "AI Video" | "General" | "Quotation";
+  type: "Marine" | "Real Estate" | "AI Operator" | "General" | "Quotation";
   reference: string;
   summary: string;
   status: "Received" | "In review" | "Quoted" | "Scheduled" | "Closed";

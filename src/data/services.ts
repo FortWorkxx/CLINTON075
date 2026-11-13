@@ -164,59 +164,159 @@ export const marinePackages: Package[] = [
   },
 ];
 
-export type CreativeService = {
+export type AiCapability = {
+  slug: string;
   title: string;
-  body: string;
+  summary: string;
   icon: string;
+  items: string[];
 };
 
-export const creativeServices: CreativeService[] = [
-  { title: "AI Product Commercials", body: "Studio-grade product films generated and edited for launch campaigns, with considered lighting, motion and sound design.", icon: "film" },
-  { title: "Social Video Ads", body: "Vertical-first paid social creative in 9:16, delivered in the hook-first structure that performs on Instagram, TikTok and Reels.", icon: "phone" },
-  { title: "Brand Storytelling", body: "Cinematic brand films that explain what you do, who you do it for and why it matters — scripted and produced end to end.", icon: "sparkle" },
-  { title: "AI Spokesperson Videos", body: "Presentable, on-brand virtual presenters for explainers, training content and product walkthroughs in multiple languages.", icon: "person" },
-  { title: "AI Voice-Over", body: "Clean studio-quality voice-over in English, Yoruba, Igbo, Hausa and French, with timing matched precisely to picture.", icon: "mic" },
-  { title: "Real Estate & Fashion Films", body: "Property walkthroughs and fashion lookbook films produced inside our own divisions, then adapted for your campaign.", icon: "camera" },
+/**
+ * Proposed capability areas for the AI Operator division.
+ * Blueprint Section 8 lists these as potential services; the company's actual
+ * offer must be approved before they are sold as a confirmed catalogue.
+ */
+export const aiCapabilities: AiCapability[] = [
+  {
+    slug: "ai-assistants",
+    title: "AI Business Assistants",
+    summary:
+      "A first line of response for customer enquiries — answering approved questions, qualifying leads and handing complex cases to a person.",
+    icon: "assistant",
+    items: [
+      "Website chat assistants",
+      "FAQ and policy answering from approved content",
+      "Enquiry capture and routing",
+      "Lead qualification before a human call",
+      "Multilingual response options",
+    ],
+  },
+  {
+    slug: "process-automation",
+    title: "Business Process Automation",
+    summary:
+      "Removing the repetitive admin between an enquiry and a delivered job: scheduling, follow-up, reminders and record-keeping.",
+    icon: "workflow",
+    items: [
+      "Appointment and inspection scheduling",
+      "Automated acknowledgement and follow-up",
+      "Internal approval workflows",
+      "Document and data processing",
+      "Task assignment and reminders",
+    ],
+  },
+  {
+    slug: "content-operations",
+    title: "AI Content Operations",
+    summary:
+      "A repeatable production line for marketing content, with a human editor reviewing every asset before publication.",
+    icon: "content",
+    items: [
+      "Marketing copy and product descriptions",
+      "Social content planning and calendars",
+      "Product and campaign imagery support",
+      "Short-form video support",
+      "Brand tone and style guidelines",
+    ],
+  },
+  {
+    slug: "integrations",
+    title: "AI Integration",
+    summary:
+      "Connecting the tools a business already uses so information moves without being retyped by staff.",
+    icon: "integration",
+    items: [
+      "Website chatbot and contact-form routing",
+      "WhatsApp Business enquiry handling",
+      "CRM and lead management connections",
+      "Order and booking status lookups",
+      "Notification pipelines",
+    ],
+  },
+  {
+    slug: "consulting",
+    title: "AI Consulting & Training",
+    summary:
+      "Practical guidance on where automation is worth it, what it costs and how to introduce it without disrupting current operations.",
+    icon: "training",
+    items: [
+      "Automation opportunity assessment",
+      "Tool selection and cost review",
+      "Staff training and workflow documentation",
+      "Pilot design and success measures",
+      "Policy guidance for customer data",
+    ],
+  },
 ];
 
-export const creativePackages: Package[] = [
+export type Engagement = {
+  name: string;
+  note: string;
+  price: string;
+  features: string[];
+  highlight?: boolean;
+};
+
+/** Engagement models. Pricing is quoted after scoping — no invented rates. */
+export const aiEngagements: Engagement[] = [
   {
-    name: "Starter",
-    price: "from ₦280,000",
-    note: "1 video · 5–15 seconds",
+    name: "Assessment",
+    note: "One to two weeks",
+    price: "Quoted after scoping",
     features: [
-      "One short promotional video",
-      "Script and concept included",
-      "Two revisions",
-      "9:16 and 1:1 exports",
-      "Delivery in 5 working days",
+      "Review of current enquiries and admin",
+      "Shortlist of automatable tasks",
+      "Cost and effort estimates",
+      "Written recommendation — no obligation to proceed",
     ],
   },
   {
-    name: "Professional",
-    price: "from ₦750,000",
-    note: "3 videos · up to 30 seconds",
+    name: "Pilot",
+    note: "One workflow or one channel",
+    price: "Quoted after scoping",
     highlight: true,
     features: [
-      "Three videos, up to 30 seconds each",
-      "AI voice-over in English",
-      "Sound design and licensed music",
-      "Three revisions per video",
-      "9:16, 1:1 and 16:9 exports",
-      "Delivery in 10 working days",
+      "A single workflow built and tested",
+      "Approved content and escalation rules",
+      "Staff handover and documentation",
+      "Defined success measures",
+      "Review before any wider rollout",
     ],
   },
   {
-    name: "Premium",
-    price: "Quotation based",
-    note: "Campaign package",
+    name: "Operate",
+    note: "Ongoing support",
+    price: "Monthly retainer, scoped",
     features: [
-      "Cinematic campaign concept",
-      "Multiple scenes and AI spokesperson",
-      "Multilingual voice-over",
-      "Platform-specific adaptations",
-      "Performance reporting on request",
-      "Dedicated creative director",
+      "Monitoring and content updates",
+      "Monthly performance summary",
+      "Change requests and refinements",
+      "Escalation to human staff retained",
+      "Named account contact",
     ],
+  },
+];
+
+export const aiFaqs = [
+  {
+    q: "What exactly is the AI Operator division?",
+    a: "The blueprint describes a division offering AI-powered business operations and automation. That direction is what this page outlines, but the specific services have not yet been confirmed by the company. We present these areas as proposed so no visitor is sold a capability that is not ready.",
+  },
+  {
+    q: "Can I buy an AI service today?",
+    a: "You can submit a requirements brief and our team will respond with what is feasible, what it would cost and how long it would take. Nothing is sold until the service scope is confirmed in writing.",
+  },
+  {
+    q: "Will an AI assistant answer customers without a human?",
+    a: "Only within limits the business sets. Any assistant we build is restricted to approved information, must state that it is automated, and must hand over pricing negotiations, complaints and complex requests to a person.",
+  },
+  {
+    q: "What about customer data?",
+    a: "Automation projects are scoped around the Nigeria Data Protection Act 2023: lawful basis, minimum data collected, retention and access. We do not send customer data to a third-party model where the client has not approved that processing.",
+  },
+  {
+    q: "Do you replace staff?",
+    a: "The work we propose is aimed at removing repetitive administration, not at removing the people who make judgement calls. Most useful projects start with work a team already dislikes doing manually.",
   },
 ];

@@ -7,7 +7,7 @@ const topics = [
   { label: "Marine services", href: "/marine", reply: "Explore the marine division and use its enquiry form to discuss your engine or service needs." },
   { label: "Find a property", href: "/real-estate", reply: "Browse the property catalogue and contact the team about a listing or inspection." },
   { label: "Fashion store", href: "/fashion", reply: "Visit the fashion catalogue to explore products and current ordering information." },
-  { label: "AI Operator", href: "/ai-operator", reply: "The AI Operator scope is still being confirmed. Visit the division page for its current status." },
+  { label: "AI Operator", href: "/ai-operator", reply: "The AI Operator division is proposed, not yet confirmed. Its page lists the proposed scope; you can submit a requirements brief for a written response." },
   { label: "Contact the team", href: "/contact", reply: "Send a message using the contact form. A human team member will follow up." },
 ];
 

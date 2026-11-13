@@ -6,7 +6,7 @@ import { useMemo, useState } from "react";
 import { products, formatNaira } from "@/data/products";
 import { properties } from "@/data/properties";
 import { posts } from "@/data/blog";
-import { marineServices, creativeServices } from "@/data/services";
+import { marineServices, aiCapabilities } from "@/data/services";
 
 type Result = {
   id: string;
@@ -49,14 +49,14 @@ const allResults: Result[] = [
     group: "Services" as const,
     text: `${s.title} ${s.summary} ${s.items.join(" ")}`,
   })),
-  ...creativeServices.map((s) => ({
-    id: `c-${s.title}`,
+  ...aiCapabilities.map((s) => ({
+    id: `ai-${s.slug}`,
     title: s.title,
-    meta: "AI Operator",
+    meta: "AI Operator (proposed)",
     href: "/ai-operator",
     image: "/images/division-ai.jpg",
     group: "Services" as const,
-    text: `${s.title} ${s.body}`,
+    text: `${s.title} ${s.summary} ${s.items.join(" ")}`,
   })),
   ...posts.map((p) => ({
     id: `b-${p.slug}`,

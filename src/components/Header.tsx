@@ -17,6 +17,7 @@ const divisionIcons: Record<string, string> = {
 export default function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  const [progress, setProgress] = useState(0);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
   const { cartCount, wishlist } = useStore();
@@ -25,10 +26,18 @@ export default function Header() {
   const solid = scrolled || !isHome || megaOpen;
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(max > 0 ? Math.min(window.scrollY / max, 1) : 0);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -185,6 +194,16 @@ export default function Header() {
               </svg>
             </button>
           </div>
+        </div>
+
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-transparent"
+          aria-hidden="true"
+        >
+          <div
+            className="h-px origin-left bg-gradient-to-r from-gold-dark via-gold to-gold-light transition-[width] duration-150 ease-out"
+            style={{ width: `${progress * 100}%` }}
+          />
         </div>
 
         {/* Mega menu */}

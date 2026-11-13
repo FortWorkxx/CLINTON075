@@ -1,7 +1,7 @@
 export type Project = {
   id: string;
   title: string;
-  division: "Marine" | "Fashion" | "Real Estate" | "AI Video";
+  division: "Marine" | "Fashion" | "Real Estate" | "AI Operator";
   client: string;
   year: string;
   image: string;
@@ -123,40 +123,40 @@ export const projects: Project[] = [
   },
   {
     id: "pr7",
-    title: "FMCG Launch — Eight Product Films",
-    division: "AI Video",
-    client: "Consumer goods brand",
+    title: "Enquiry Triage — Internal Concept",
+    division: "AI Operator",
+    client: "Internal concept build",
     year: "2025",
     image: "/images/division-ai.jpg",
     summary:
-      "Eight AI-assisted product videos produced in ten days for a national launch, including six vertical cutdowns.",
-    objective: "Produce a full launch video suite faster than a conventional shoot allows.",
-    deliverables: "Two 30-second films, six 9:16 cutdowns, voice-over in English and Yoruba.",
-    platforms: "Instagram, TikTok, YouTube, in-store screens",
+      "A concept workflow that classifies website enquiries by division, extracts the key details and routes each one to the right team. Built as an internal demonstration, not a delivered client system.",
+    objective: "Test whether routine enquiry sorting could be handled before it reaches staff.",
+    deliverables: "Classification rules, extraction template, routing logic and human handover paths.",
+    platforms: "Website enquiry forms",
     metrics: [
-      { label: "Films delivered", value: "8" },
-      { label: "Turnaround", value: "10 days" },
-      { label: "Top CTR vs. benchmark", value: "+2.4×" },
+      { label: "Divisions routed", value: "4" },
+      { label: "Handover rules", value: "6" },
+      { label: "Status", value: "Concept" },
     ],
   },
   {
     id: "pr8",
-    title: "Property Campaign Film — Ocean View Penthouse",
-    division: "AI Video",
-    client: "Real estate agency",
+    title: "Contract Renewal Reminder — Prototype",
+    division: "AI Operator",
+    client: "Internal prototype",
     year: "2025",
     image: "/images/property-2.jpg",
     summary:
-      "A 45-second cinematic property film built from stills and drone footage, cut for listing pages and paid social.",
-    objective: "Give a high-value listing a video asset without a full crew visit.",
-    deliverables: "45-second hero film, three vertical edits, thumbnail set.",
-    platforms: "Instagram, YouTube, listing portals",
+      "A prototype reminder sequence for recurring service contracts: scheduled prompts, a documented check before sending and a named staff member accountable for each release.",
+    objective: "Reduce missed renewal dates without automating the client relationship away.",
+    deliverables: "Trigger logic, approval step, message templates and audit log.",
+    platforms: "Email and staff dashboard",
     metrics: [
-      { label: "Runtime", value: "0:45" },
-      { label: "Edits", value: "4" },
-      { label: "Enquiries in week one", value: "31" },
+      { label: "Reminder steps", value: "3" },
+      { label: "Human approval", value: "Required" },
+      { label: "Status", value: "Prototype" },
     ],
   },
 ];
 
-export const divisionFilters = ["All", "Marine", "Fashion", "Real Estate", "AI Video"] as const;
+export const divisionFilters = ["All", "Marine", "Fashion", "Real Estate", "AI Operator"] as const;

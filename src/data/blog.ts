@@ -2,7 +2,7 @@ export type Post = {
   slug: string;
   title: string;
   excerpt: string;
-  division: "Marine" | "Fashion" | "Real Estate" | "AI Video";
+  division: "Marine" | "Fashion" | "Real Estate" | "AI Operator";
   date: string;
   readTime: string;
   author: string;
@@ -170,44 +170,45 @@ export const posts: Post[] = [
     ],
   },
   {
-    slug: "ai-video-advertising-small-business",
-    title: "How AI video is changing advertising for small Nigerian businesses",
+    slug: "ai-operators-small-business-administration",
+    title: "AI operators and the admin nobody wants to do",
     excerpt:
-      "A full production crew used to be the barrier to a premium commercial. That barrier has largely gone — here is what changed and what it means for your budget.",
-    division: "AI Video",
+      "Before buying an AI tool, look at where your week actually disappears. Most Nigerian small businesses lose more time to enquiry handling than to the work itself.",
+    division: "AI Operator",
     date: "2025-09-08",
     readTime: "5 min read",
-    author: "Creative Team",
+    author: "AI Operator Team",
     image: "/images/division-ai.jpg",
     body: [
       {
         paragraphs: [
-          "Two years ago, a 30-second product commercial meant a crew, a studio, a lighting package, a voice artist and a week of post-production. For a small Nigerian business, the budget rarely justified it.",
-          "AI-assisted production has changed the economics without changing the standard. The difference between a good AI commercial and a bad one is not the tool — it is the direction, the script and the edit.",
+          "Ask a small business owner where the week goes and the answer is rarely the core work. It is the messages that arrive at 11pm, the quote that was promised and not sent, the follow-up nobody remembered, and the same six questions answered in slightly different words.",
+          "That is the layer an AI operator is meant to address. Not the strategy, not the pricing decision, not the relationship — the repetition around them.",
         ],
       },
       {
-        heading: "What AI genuinely does well",
+        heading: "Start with a process, not a tool",
         paragraphs: [
-          "Product beauty shots, clean studio lighting, brand-consistent environments, multilingual voice-over, and rapid versioning for multiple platforms. Where a shoot would take a day per setup, generated scenes take minutes.",
+          "The failure mode is buying a subscription first and looking for a use afterwards. A more reliable approach is to pick one workflow that already costs you time, write down how it works today, and only then ask what part of it could be assisted.",
         ],
         list: [
-          "Multiple platform formats from one master edit",
-          "Voice-over in English, Yoruba, Igbo, Hausa and French",
-          "Concept testing before committing to a full shoot",
-          "Consistent brand environments across a campaign",
+          "How does an enquiry arrive, and who sees it first?",
+          "Which questions are answered the same way every time?",
+          "Where does a handover to a person happen today?",
+          "What would a good outcome be, measured simply?",
         ],
       },
       {
-        heading: "Where a real camera still wins",
+        heading: "An assistant is a boundary problem",
         paragraphs: [
-          "Human faces delivering specific emotional performances, real premises that must be shown accurately, and anything where a customer needs to see the actual product in real hands. For property and fashion, we usually combine real footage with generated elements.",
+          "An automated assistant is only as safe as the information it is allowed to use. If it is restricted to approved service descriptions, published prices and stated policies, it can be genuinely useful. If it is allowed to improvise, it will eventually promise something the business cannot deliver.",
+          "The practical safeguards are unglamorous: a stated limit on what it may answer, an explicit route to a human, a log of what it said, and a named person accountable for the content it draws on.",
         ],
       },
       {
-        heading: "What to ask for in a quote",
+        heading: "What to ask before you commit",
         paragraphs: [
-          "Ask for the concept in writing before production starts, the number of revisions, the exact export formats and durations, and who owns the finished files and the voice-over licence. A professional quote will specify all four.",
+          "Ask for the workflow in writing, which systems it touches, how customer data is handled and what happens when the assistant cannot help. Ask what the pilot is measured against, and what would cause it to be stopped. A supplier who cannot answer those four questions is selling a demo, not an operation.",
         ],
       },
     ],

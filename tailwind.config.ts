@@ -65,6 +65,11 @@ const config: Config = {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        "scroll-cue": {
+          "0%": { transform: "translateY(-100%)" },
+          "55%": { transform: "translateY(250%)" },
+          "100%": { transform: "translateY(250%)" },
+        },
         shimmer: {
           "0%": { backgroundPosition: "-200% 0" },
           "100%": { backgroundPosition: "200% 0" },

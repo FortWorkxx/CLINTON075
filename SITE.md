@@ -14,7 +14,14 @@ npm run build
 
 The app includes a cinematic corporate homepage, division directory, marine service and booking pages, property discovery and property details, fashion catalogue/cart/checkout/wishlist, quotation/contact flows, customer account preview, staff dashboard preview, legal drafts, search, insights, WhatsApp enquiry menu, and a guided assistant preview.
 
-Division 04 is presented as **AI Operator**, matching the supplied blueprint. Its exact real-world service scope remains unconfirmed; the landing page explicitly calls proposed capability areas provisional. Historic `/ai-video/*` links permanently redirect to `/ai-operator`.
+Division 04 is presented as **AI Operator**, matching the supplied blueprint. Its exact real-world scope remains unconfirmed, so the division is published as *proposed*:
+
+- `/ai-operator` — status notice, five proposed capability areas (assistants, process automation, content operations, integrations, consulting/training), a four-step delivery sequence, engagement models with **no invented prices**, responsible-automation guardrails, a brief form, and division FAQs.
+- `/ai-operator/quote` — a project brief covering systems, enquiry volume, budget band, timeline and data handling, with an explicit "what we will not promise" list.
+- `/portfolio` also carries two honest internal AI Operator **concepts** (not client case studies).
+- Historic `/ai-video/*` URLs permanently redirect to `/ai-operator`; the old AI Video page tree has been removed, and all site copy, careers, admin, legal and blog references now describe AI Operator instead of video advertising.
+
+Nothing in this build claims delivered AI client work, published rates, testimonials or performance statistics. Those must be added only once substantiated.
 
 ## Brand tokens
 
@@ -44,6 +51,7 @@ Verified stats and customer testimonials are deliberately omitted from public co
 - Cart, wishlist, orders, and account data persist only in browser `localStorage`; there is no real database or authentication.
 - Checkout does not process payments. Integrate Paystack or Flutterwave with server-side verification and webhooks.
 - Enquiries are not delivered to staff; connect a backend, CRM, and email/SMS provider.
+- AI Operator engagement models show "quoted after scoping" deliberately. Do not publish rates until the division's scope and pricing are approved.
 - `/admin` is an unauthenticated, read-only preview and must be protected or removed before production.
-- The Clinton AI Assistant is a guided navigation preview, not an AI model or live customer-support connection.
+- The Clinton AI Assistant is a guided navigation preview, not an AI model or live customer-support connection. An assistant built for a client would follow the guardrails listed on `/ai-operator`.
 - Legal copy is draft content, not legal advice.

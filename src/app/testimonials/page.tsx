@@ -7,7 +7,7 @@ import { testimonials } from "@/data/site";
 export const metadata: Metadata = {
   title: "Testimonials — Client Feedback",
   description:
-    "Feedback from clients across Clinton 075's marine, fashion, real estate and AI video divisions.",
+    "Feedback from clients across Clinton Global's marine, fashion, real estate and AI video divisions.",
   alternates: { canonical: "/testimonials" },
 };
 

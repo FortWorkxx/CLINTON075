@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const KEY = "clinton075.cookie-consent.v1";
+const KEY = "clintonglobal.cookie-consent.v1";
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);

@@ -162,7 +162,7 @@ export default function ProductDetail({ product, related }: { product: Product; 
             </div>
 
             <a
-              href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent(`Hello Clinton 075, I would like to order the ${product.name} (${product.sku}).`)}`}
+              href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent(`Hello Clinton Global, I would like to order the ${product.name} (${product.sku}).`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center text-[11px] uppercase tracking-[0.14em] text-midnight/45 underline decoration-gold/40 hover:text-gold-dark"

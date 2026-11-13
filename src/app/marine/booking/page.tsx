@@ -33,7 +33,7 @@ export default function MarineBookingPage() {
             <div className="mt-7">
               <EnquiryForm
                 enquiryType="Marine"
-                referencePrefix="C075-MR"
+                referencePrefix="CGI-MR"
                 submitLabel="Submit booking request"
                 tone="light"
                 fields={[
@@ -78,7 +78,7 @@ export default function MarineBookingPage() {
                 confirm compatibility before you order — at no cost.
               </p>
               <a
-                href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Hello Clinton 075, I would like an engine compatibility check. My engine details are:")}`}
+                href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Hello Clinton Global, I would like an engine compatibility check. My engine details are:")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-dark mt-4 w-full"

@@ -182,7 +182,7 @@ export default async function PropertyPage({ params }: { params: Promise<{ slug:
               <div className="mt-4">
                 <EnquiryForm
                   enquiryType="Real Estate"
-                  referencePrefix="C075-RE"
+                  referencePrefix="CGI-RE"
                   submitLabel="Request inspection"
                   compact
                   fields={[

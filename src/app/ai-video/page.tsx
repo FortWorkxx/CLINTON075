@@ -206,7 +206,7 @@ export default function AiVideoPage() {
             <div className="mt-6">
               <EnquiryForm
                 enquiryType="AI Video"
-                referencePrefix="C075-AV"
+                referencePrefix="CGI-AV"
                 submitLabel="Send brief"
                 tone="light"
                 fields={[

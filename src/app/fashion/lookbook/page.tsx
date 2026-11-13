@@ -6,8 +6,8 @@ import Reveal from "@/components/Reveal";
 import { products, formatNaira } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "Lookbook — Clinton 075 Fashion",
-  description: "The Clinton 075 lookbook: contemporary African tailoring, ready-to-wear and accessories.",
+  title: "Lookbook — Clinton Global Fashion",
+  description: "The Clinton Global lookbook: contemporary African tailoring, ready-to-wear and accessories.",
   alternates: { canonical: "/fashion/lookbook" },
 };
 

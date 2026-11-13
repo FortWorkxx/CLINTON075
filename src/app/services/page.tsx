@@ -11,7 +11,7 @@ import { products } from "@/data/products";
 export const metadata: Metadata = {
   title: "Our Divisions — Marine, Fashion, Real Estate & AI Video",
   description:
-    "Compare the four Clinton 075 divisions: what each does, how each transaction works, and how to engage each team.",
+    "Compare the four Clinton Global divisions: what each does, how each transaction works, and how to engage each team.",
   alternates: { canonical: "/services" },
 };
 

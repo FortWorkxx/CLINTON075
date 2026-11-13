@@ -3,7 +3,7 @@ import LegalPage from "@/components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Payment & Refund Policy",
-  description: "Accepted payment methods, verification and refund terms for Clinton 075 Group.",
+  description: "Accepted payment methods, verification and refund terms for Clinton Global Investment.",
   alternates: { canonical: "/legal/payments" },
 };
 

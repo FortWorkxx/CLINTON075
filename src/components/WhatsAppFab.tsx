@@ -28,7 +28,7 @@ export default function WhatsAppFab() {
           </div>
           <div className="p-2">
             <a
-              href={waLink("Hello Clinton 075, I would like to make a general enquiry.")}
+              href={waLink("Hello Clinton Global, I would like to make a general enquiry.")}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between rounded-xl px-3 py-2.5 text-sm text-midnight transition hover:bg-ivory"
@@ -39,7 +39,7 @@ export default function WhatsAppFab() {
             {divisions.map((d) => (
               <a
                 key={d.slug}
-                href={waLink(`Hello Clinton 075, I have an enquiry about ${d.name}.`)}
+                href={waLink(`Hello Clinton Global, I have an enquiry about ${d.name}.`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between rounded-xl px-3 py-2.5 text-sm text-midnight transition hover:bg-ivory"

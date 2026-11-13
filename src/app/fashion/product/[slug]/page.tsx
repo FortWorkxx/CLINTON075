@@ -43,7 +43,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     description: product.description,
     sku: product.sku,
     image: [product.image],
-    brand: { "@type": "Brand", name: "Clinton 075 Fashion" },
+    brand: { "@type": "Brand", name: "Clinton Global Fashion" },
     offers: {
       "@type": "Offer",
       priceCurrency: "NGN",

@@ -32,7 +32,7 @@ export default function AiVideoQuotePage() {
             <div className="mt-7">
               <EnquiryForm
                 enquiryType="AI Video"
-                referencePrefix="C075-AV"
+                referencePrefix="CGI-AV"
                 submitLabel="Request quotation"
                 tone="light"
                 fields={[
@@ -86,7 +86,7 @@ export default function AiVideoQuotePage() {
               <p className="mt-2 text-sm leading-relaxed text-ivory/60">
                 Send a WhatsApp voice note with your idea. It is often faster than a form.
               </p>
-              <a href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Hello Clinton 075, I have an AI video project I would like to discuss.")}`} target="_blank" rel="noopener noreferrer" className="btn-gold mt-4 w-full">
+              <a href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent("Hello Clinton Global, I have an AI video project I would like to discuss.")}`} target="_blank" rel="noopener noreferrer" className="btn-gold mt-4 w-full">
                 Message on WhatsApp
               </a>
             </div>

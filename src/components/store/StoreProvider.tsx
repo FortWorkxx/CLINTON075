@@ -62,7 +62,7 @@ const initialState: StoreState = {
       id: "STARTER-1",
       date: new Date().toISOString(),
       type: "Quotation",
-      reference: "C075-DEMO-1042",
+      reference: "CGI-DEMO-1042",
       summary: "Demo entry — your live enquiries will appear here.",
       status: "Quoted",
     },
@@ -93,7 +93,7 @@ type StoreContextValue = StoreState & {
 
 const StoreContext = createContext<StoreContextValue | null>(null);
 
-const STORAGE_KEY = "clinton075.store.v1";
+const STORAGE_KEY = "clintonglobal.store.v1";
 
 export function StoreProvider({ children }: { children: ReactNode }) {
   const [state, setState] = useState<StoreState>(initialState);
@@ -197,7 +197,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   const placeOrder = useCallback(
     (customer: Order["customer"], payment: string, delivery: number) => {
-      const id = `C075-${Math.floor(100000 + Math.random() * 900000)}`;
+      const id = `CGI-${Math.floor(100000 + Math.random() * 900000)}`;
       const order: Order = {
         id,
         date: new Date().toISOString(),

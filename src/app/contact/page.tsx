@@ -7,15 +7,15 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Contact Us — Lagos Head Office",
   description:
-    "Contact Clinton 075 Group in Lekki, Lagos. Phone, WhatsApp, email and office visits for all four divisions.",
+    "Contact Clinton Global Investment in Lekki, Lagos. Phone, WhatsApp, email and office visits for all four divisions.",
   alternates: { canonical: "/contact" },
 };
 
 const divisionContacts = [
-  { d: "Marine Services", email: "marine@clinton075.com", note: "Engine enquiries, servicing, spare parts" },
-  { d: "Fashion", email: "fashion@clinton075.com", note: "Orders, sizing, bespoke appointments" },
-  { d: "Real Estate", email: "property@clinton075.com", note: "Listings, inspections, management" },
-  { d: "AI Video Advertising", email: "creative@clinton075.com", note: "Campaign briefs and quotations" },
+  { d: "Marine Services", note: "Engine enquiries, servicing, spare parts" },
+  { d: "Fashion", note: "Orders, sizing, bespoke appointments" },
+  { d: "Real Estate", note: "Listings, inspections, management" },
+  { d: "AI Video Advertising", note: "Campaign briefs and quotations" },
 ];
 
 export default function ContactPage() {
@@ -63,12 +63,18 @@ export default function ContactPage() {
                       <p className="text-sm font-medium text-midnight">{d.d}</p>
                       <p className="text-[11px] text-midnight/45">{d.note}</p>
                     </div>
-                    <a href={`mailto:${d.email}`} className="text-[11px] text-gold-dark hover:underline">{d.email}</a>
+                    <a
+                      href={`mailto:${site.email}?subject=${encodeURIComponent(`${d.d} enquiry`)}`}
+                      className="text-[11px] text-gold-dark hover:underline"
+                    >
+                      {site.email}
+                    </a>
                   </li>
                 ))}
               </ul>
               <p className="mt-3 text-[10px] text-midnight/35">
-                Demo addresses. Replace with your live mailboxes before launch.
+                All division enquiries route to our main mailbox. Add division-specific addresses here once they
+                exist.
               </p>
             </div>
 
@@ -99,7 +105,7 @@ export default function ContactPage() {
             <div className="mt-6">
               <EnquiryForm
                 enquiryType="General"
-                referencePrefix="C075"
+                referencePrefix="CGI"
                 submitLabel="Send message"
                 tone="light"
                 fields={[

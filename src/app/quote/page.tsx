@@ -7,7 +7,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Get a Quote — All Four Divisions",
   description:
-    "Request a written quotation for marine services, fashion, real estate or AI video advertising. One form covers all four Clinton 075 divisions.",
+    "Request a written quotation for marine services, fashion, real estate or AI video advertising. One form covers all four Clinton Global divisions.",
   alternates: { canonical: "/quote" },
 };
 
@@ -33,7 +33,7 @@ export default function QuotePage() {
             <div className="mt-7">
               <EnquiryForm
                 enquiryType="Quotation"
-                referencePrefix="C075-QT"
+                referencePrefix="CGI-QT"
                 submitLabel="Request quotation"
                 tone="light"
                 fields={[

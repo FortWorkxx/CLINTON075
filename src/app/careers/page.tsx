@@ -3,9 +3,9 @@ import PageHero from "@/components/PageHero";
 import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata: Metadata = {
-  title: "Careers — Join Clinton 075 Group",
+  title: "Careers — Join Clinton Global Investment",
   description:
-    "Open roles and applications across Clinton 075's marine, fashion, real estate and creative divisions in Lagos.",
+    "Open roles and applications across Clinton Global's marine, fashion, real estate and creative divisions in Lagos.",
   alternates: { canonical: "/careers" },
 };
 
@@ -76,7 +76,7 @@ export default function CareersPage() {
             <div className="mt-6">
               <EnquiryForm
                 enquiryType="General"
-                referencePrefix="C075-JOB"
+                referencePrefix="CGI-JOB"
                 submitLabel="Submit application"
                 tone="light"
                 fields={[

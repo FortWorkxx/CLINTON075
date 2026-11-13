@@ -9,7 +9,7 @@ import { products } from "@/data/products";
 export const metadata: Metadata = {
   title: "Fashion Store — Contemporary Nigerian Ready-to-Wear",
   description:
-    "Shop ready-to-wear, traditional tailoring, shoes and accessories from Clinton 075 Fashion. Made in Nigeria, delivered nationwide.",
+    "Shop ready-to-wear, traditional tailoring, shoes and accessories from Clinton Global Fashion. Made in Nigeria, delivered nationwide.",
   alternates: { canonical: "/fashion" },
 };
 

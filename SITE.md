@@ -1,4 +1,4 @@
-# Clinton 075 Group — Website
+# Clinton Global Investment — Website
 
 A production-ready **Next.js 15** marketing and commerce website for a Nigerian multi-service company, built to the specification in [`README.md`](./README.md).
 
@@ -117,7 +117,7 @@ These are deliberate, documented gaps in the static build:
 1. **Persistence is browser-local.** Cart, wishlist, orders and enquiries use `localStorage`. Add PostgreSQL + an auth provider (e.g. NextAuth/Auth.js) for real accounts.
 2. **Payments are not processed.** Checkout records an order and confirms it; no card data is collected. Integrate Paystack or Flutterwave with server-side verification and a webhook.
 3. **Enquiries are not delivered.** The forms validate and show a reference, then store locally. Connect Resend (email), a CRM, or a database handler in `EnquiryForm.tsx`.
-4. **Placeholder business details.** Phone, email, RC number, social handles and office address are in `src/data/site.ts` — replace with real ones. Add your logo file and favicon if you have brand assets.
+4. **Live details vs. placeholders.** Company name (Clinton Global Investment), phone (0814 611 1799 / +234 814 611 1799), WhatsApp and email (godpowerclinton075@gmail.com) are configured in `src/data/site.ts` and used throughout the site, WhatsApp links and structured data. Still placeholders: RC/CAC number, office address, social handles and the domain in `site.url` — update these in the same file. Replace `src/app/icon.svg` and the logo mark if you have official brand artwork.
 5. **Placeholder media.** Images are AI-generated brand visuals; portfolio video previews are placeholders. Metrics and testimonials are illustrative and must be replaced with substantiated figures and written client permission.
 6. **`/admin` is unauthenticated** for review. Protect or remove it before deployment.
 7. **Legal pages are drafts.** Have them reviewed by a qualified Nigerian legal professional (NDPA 2023 compliance included).

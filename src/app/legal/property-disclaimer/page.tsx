@@ -3,7 +3,7 @@ import LegalPage from "@/components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Property Listing Disclaimer",
-  description: "The basis on which Clinton 075 Real Estate publishes property listing information.",
+  description: "The basis on which Clinton Global Real Estate publishes property listing information.",
   alternates: { canonical: "/legal/property-disclaimer" },
 };
 

@@ -6,7 +6,7 @@ import { site } from "@/data/site";
 export default function PropertyActions({ id, title, listingId }: { id: string; title: string; listingId: string }) {
   const { toggleSavedProperty, isPropertySaved } = useStore();
   const saved = isPropertySaved(id);
-  const waMessage = `Hello Clinton 075, I am interested in ${title} (${listingId}).`;
+  const waMessage = `Hello Clinton Global, I am interested in ${title} (${listingId}).`;
 
   return (
     <div className="space-y-3">

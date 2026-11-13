@@ -10,7 +10,7 @@ import { divisions, site } from "@/data/site";
 export const metadata: Metadata = {
   title: "About Us — One Company, Four Divisions",
   description:
-    "Clinton 075 Group is a Nigerian multi-service company operating marine, fashion, real estate and AI video advertising divisions under one corporate identity.",
+    "Clinton Global Investment is a Nigerian multi-service company operating marine, fashion, real estate and AI video advertising divisions under one corporate identity.",
   alternates: { canonical: "/about" },
 };
 
@@ -32,14 +32,14 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About Clinton 075"
+        eyebrow="About Clinton Global"
         title={
           <>
             One company.<br />
             <span className="italic text-gold">Four disciplines.</span>
           </>
         }
-        description="We were built to solve a specific problem: clients in Nigeria often need several unrelated services, and end up managing several unrelated vendors. Clinton 075 Group brings them under one accountable brand."
+        description="We were built to solve a specific problem: clients in Nigeria often need several unrelated services, and end up managing several unrelated vendors. Clinton Global Investment brings them under one accountable brand."
         image="/images/hero-marina.jpg"
         crumbs={[{ label: "About" }]}
         tall
@@ -55,7 +55,7 @@ export default function AboutPage() {
             />
             <div className="mt-7 space-y-4 text-sm leading-relaxed text-midnight/65">
               <p>
-                Rather than acting as a broker between unrelated vendors, each Clinton 075 division was built with
+                Rather than acting as a broker between unrelated vendors, each Clinton Global division was built with
                 its own capability in-house: its own technicians, tailors, listing coordinators and editors. What
                 they share is a standard of administration — written quotations, documented delivery and a single
                 accounts function.

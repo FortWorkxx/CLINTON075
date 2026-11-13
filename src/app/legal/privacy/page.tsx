@@ -4,7 +4,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How Clinton 075 Group collects, uses and protects personal data under the Nigeria Data Protection Act 2023.",
+  description: "How Clinton Global Investment collects, uses and protects personal data under the Nigeria Data Protection Act 2023.",
   alternates: { canonical: "/legal/privacy" },
 };
 

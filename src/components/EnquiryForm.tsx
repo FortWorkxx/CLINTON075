@@ -19,7 +19,7 @@ export default function EnquiryForm({
   submitLabel = "Submit enquiry",
   tone = "dark",
   enquiryType = "General",
-  referencePrefix = "C075",
+  referencePrefix = "CGI",
   summaryLabel = "Enquiry submitted from website",
   compact = false,
 }: {
@@ -100,7 +100,7 @@ export default function EnquiryForm({
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <a
             href={`https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
-              `Hello Clinton 075, I just submitted enquiry ${submitted.ref}.`
+              `Hello Clinton Global, I just submitted enquiry ${submitted.ref}.`
             )}`}
             target="_blank"
             rel="noopener noreferrer"

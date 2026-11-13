@@ -3,7 +3,7 @@ import LegalPage from "@/components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Delivery & Returns Policy",
-  description: "Fashion delivery timelines, costs and the Clinton 075 returns process.",
+  description: "Fashion delivery timelines, costs and the Clinton Global returns process.",
   alternates: { canonical: "/legal/delivery" },
 };
 
@@ -11,7 +11,7 @@ export default function DeliveryPage() {
   return (
     <LegalPage
       title="Delivery & Returns"
-      intro="Delivery timelines, costs and the returns process for fashion orders placed with Clinton 075."
+      intro="Delivery timelines, costs and the returns process for fashion orders placed with Clinton Global."
       updated="13 November 2025"
       sections={[
         {

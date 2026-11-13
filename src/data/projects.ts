@@ -53,7 +53,7 @@ export const projects: Project[] = [
     id: "pr3",
     title: "Signature Agbada Collection",
     division: "Fashion",
-    client: "Clinton 075 Fashion",
+    client: "Clinton Global Fashion",
     year: "2025",
     image: "/images/division-fashion.jpg",
     summary:

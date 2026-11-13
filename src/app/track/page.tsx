@@ -37,7 +37,7 @@ export default function TrackPage() {
             id="ref"
             value={ref}
             onChange={(e) => setRef(e.target.value)}
-            placeholder="e.g. C075-482913"
+            placeholder="e.g. CGI-482913"
             className="field"
             required
           />

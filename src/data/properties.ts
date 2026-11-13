@@ -65,7 +65,7 @@ export const properties: Property[] = [
       "Gated security",
       "Private parking for 3 cars",
     ],
-    listingId: "C075-RE-1001",
+    listingId: "CGI-RE-1001",
     documentation: "Governor's consent available on the parent title. Survey plan provided for review.",
   },
   {
@@ -98,7 +98,7 @@ export const properties: Property[] = [
       "Full backup power",
       "Two dedicated parking spaces",
     ],
-    listingId: "C075-RE-1002",
+    listingId: "CGI-RE-1002",
     documentation: "Deed of assignment and building approval available. Service charge schedule on request.",
   },
   {
@@ -127,7 +127,7 @@ export const properties: Property[] = [
       "Dry land, no sand filling required",
       "Flexible payment plan over 6 months",
     ],
-    listingId: "C075-RE-1003",
+    listingId: "CGI-RE-1003",
     documentation:
       "Registered survey and deed of assignment available. Family receipt and layout plan provided for legal review.",
   },
@@ -159,7 +159,7 @@ export const properties: Property[] = [
       "24-hour security",
       "Fibre-ready",
     ],
-    listingId: "C075-RE-1004",
+    listingId: "CGI-RE-1004",
     documentation: "Building approval and tenancy agreement template available on request.",
   },
   {
@@ -185,7 +185,7 @@ export const properties: Property[] = [
     description:
       "A bright newly refurbished two-bedroom flat close to the tech cluster in Yaba. Tiled throughout, with a fitted kitchen and a small balcony.",
     features: ["Newly refurbished", "Fitted kitchen", "Prepaid meter", "Secure compound", "Balcony"],
-    listingId: "C075-RE-1005",
+    listingId: "CGI-RE-1005",
     documentation: "Landlord title and tenancy agreement reviewed. Agency fee disclosed before inspection.",
   },
   {
@@ -217,7 +217,7 @@ export const properties: Property[] = [
       "Borehole and treatment plant",
       "Gated street",
     ],
-    listingId: "C075-RE-1006",
+    listingId: "CGI-RE-1006",
     documentation: "Certificate of occupancy on the parent title. Survey plan available for inspection.",
   },
   {
@@ -243,7 +243,7 @@ export const properties: Property[] = [
     description:
       "A serviced one-bedroom apartment available for short stays. Fully furnished, with daily housekeeping, unlimited Wi-Fi and 24-hour power.",
     features: ["Fully furnished", "Daily housekeeping", "Unlimited Wi-Fi", "24-hour power", "Netflix included"],
-    listingId: "C075-RE-1007",
+    listingId: "CGI-RE-1007",
     documentation: "Short-let terms and house rules provided before booking. Identity verification required.",
   },
   {
@@ -268,7 +268,7 @@ export const properties: Property[] = [
     description:
       "A well-maintained bungalow in Magodo Phase 2, suitable for a first family home or a rental investment. Recently repainted with a new roof.",
     features: ["Recently repainted", "New roof", "Borehole", "Fenced compound", "Space for extension"],
-    listingId: "C075-RE-1008",
+    listingId: "CGI-RE-1008",
     documentation: "Sold. Retained on the site as a reference listing.",
   },
 ];

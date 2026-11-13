@@ -7,7 +7,7 @@ import { faqs, site } from "@/data/site";
 export const metadata: Metadata = {
   title: "FAQs — Orders, Bookings, Payments & Properties",
   description:
-    "Answers to common questions about working with Clinton 075 Group: quotations, payments, delivery, bookings and property documentation.",
+    "Answers to common questions about working with Clinton Global Investment: quotations, payments, delivery, bookings and property documentation.",
   alternates: { canonical: "/faqs" },
 };
 
@@ -110,7 +110,7 @@ export default function FaqsPage() {
               <div className="mt-4">
                 <EnquiryForm
                   enquiryType="General"
-                  referencePrefix="C075-FAQ"
+                  referencePrefix="CGI-FAQ"
                   submitLabel="Send question"
                   tone="light"
                   compact

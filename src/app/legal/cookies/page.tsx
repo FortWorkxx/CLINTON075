@@ -3,7 +3,7 @@ import LegalPage from "@/components/LegalPage";
 
 export const metadata: Metadata = {
   title: "Cookie Policy",
-  description: "How Clinton 075 Group uses cookies and similar technologies.",
+  description: "How Clinton Global Investment uses cookies and similar technologies.",
   alternates: { canonical: "/legal/cookies" },
 };
 

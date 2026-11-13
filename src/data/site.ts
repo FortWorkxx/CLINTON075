@@ -1,24 +1,27 @@
 export const site = {
-  name: "Clinton 075 Group",
-  shortName: "Clinton 075",
+  name: "Clinton Global Investment",
+  shortName: "Clinton Global",
+  legalName: "Clinton Global Investment",
+  logoMark: "C",
+  logoSuffix: "GLOBAL",
   tagline: "One Company. Multiple Solutions. Exceptional Experiences.",
   description:
     "A Nigerian multi-service company operating four divisions: marine services and outboard engines, contemporary fashion, real estate, and AI video advertising.",
-  url: "https://clinton075.com",
-  phone: "+234 800 000 0075",
-  phoneHref: "+2348000000075",
-  whatsapp: "2348000000075",
-  email: "hello@clinton075.com",
-  salesEmail: "sales@clinton075.com",
+  url: "https://clintonglobalinvestment.com",
+  phone: "0814 611 1799",
+  phoneHref: "+2348146111799",
+  whatsapp: "2348146111799",
+  email: "godpowerclinton075@gmail.com",
+  salesEmail: "godpowerclinton075@gmail.com",
   address: "14B Admiralty Way, Lekki Phase 1, Lagos, Nigeria",
   hours: "Mon – Fri, 8:30am – 6:00pm · Sat, 9:00am – 3:00pm",
-  rc: "RC 0000000 (placeholder)",
+  rc: "Registration number to be supplied",
   socials: [
-    { label: "Instagram", href: "https://instagram.com", handle: "@clinton075" },
-    { label: "Facebook", href: "https://facebook.com", handle: "/clinton075" },
-    { label: "TikTok", href: "https://tiktok.com", handle: "@clinton075" },
-    { label: "LinkedIn", href: "https://linkedin.com", handle: "/company/clinton075" },
-    { label: "YouTube", href: "https://youtube.com", handle: "@clinton075" },
+    { label: "Instagram", href: "https://instagram.com", handle: "@clintonglobal" },
+    { label: "Facebook", href: "https://facebook.com", handle: "/clintonglobalinvestment" },
+    { label: "TikTok", href: "https://tiktok.com", handle: "@clintonglobal" },
+    { label: "LinkedIn", href: "https://linkedin.com", handle: "/company/clinton-global-investment" },
+    { label: "YouTube", href: "https://youtube.com", handle: "@clintonglobal" },
   ],
 };
 
@@ -170,7 +173,7 @@ export const testimonials = [
 export const faqs = [
   {
     q: "Are you four separate companies?",
-    a: "No. Clinton 075 Group is one company with four operating divisions. Each division has its own team, service catalogue and booking process, but they share one corporate identity, one accounts function and one standard of service.",
+    a: "No. Clinton Global Investment is one company with four operating divisions. Each division has its own team, service catalogue and booking process, but they share one corporate identity, one accounts function and one standard of service.",
   },
   {
     q: "Do you work outside Lagos?",

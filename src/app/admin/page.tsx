@@ -7,7 +7,7 @@ import { divisions } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Admin Dashboard (Preview)",
-  description: "Preview of the Clinton 075 staff administration dashboard.",
+  description: "Preview of the Clinton Global staff administration dashboard.",
   robots: { index: false, follow: false },
 };
 

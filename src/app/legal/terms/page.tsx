@@ -4,7 +4,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
-  description: "The terms governing use of the Clinton 075 Group website and our services.",
+  description: "The terms governing use of the Clinton Global Investment website and our services.",
   alternates: { canonical: "/legal/terms" },
 };
 
@@ -12,7 +12,7 @@ export default function TermsPage() {
   return (
     <LegalPage
       title="Terms & Conditions"
-      intro="The terms that apply when you use this website or engage any Clinton 075 division."
+      intro="The terms that apply when you use this website or engage any Clinton Global division."
       updated="13 November 2025"
       sections={[
         {

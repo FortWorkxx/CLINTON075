@@ -164,7 +164,7 @@ export default function HomePage() {
                   <span className="italic text-gold-dark">one thing done well.</span>
                 </>
               }
-              description="Clinton 075 Group was established to bring diverse services under one accountable brand. Rather than sending clients between unrelated vendors, each division operates with its own specialists while sharing the same standards, accounts and support function."
+              description="Clinton Global Investment was established to bring diverse services under one accountable brand. Rather than sending clients between unrelated vendors, each division operates with its own specialists while sharing the same standards, accounts and support function."
             />
 
             <div className="mt-9 grid gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -614,7 +614,7 @@ export default function HomePage() {
             <EnquiryForm
               tone="dark"
               enquiryType="General"
-              referencePrefix="C075"
+              referencePrefix="CGI"
               submitLabel="Send enquiry"
               fields={[
                 { name: "name", label: "Full name", required: true, placeholder: "Your name" },

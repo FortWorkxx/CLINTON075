@@ -21,7 +21,8 @@ export const metadata: Metadata = {
     "properties for sale in Nigeria",
     "AI video advertising agency Nigeria",
     "real estate Lekki",
-    "Clinton 075",
+    "Clinton Global Investment",
+    "outboard engine Lagos",
   ],
   openGraph: {
     type: "website",
@@ -64,10 +65,10 @@ const orgSchema = {
   },
   sameAs: site.socials.map((s) => s.href),
   department: [
-    { "@type": "Organization", name: "Clinton 075 Marine Services" },
-    { "@type": "Organization", name: "Clinton 075 Fashion" },
-    { "@type": "Organization", name: "Clinton 075 Real Estate" },
-    { "@type": "Organization", name: "Clinton 075 AI Video Advertising" },
+    { "@type": "Organization", name: "Clinton Global Marine Services" },
+    { "@type": "Organization", name: "Clinton Global Fashion" },
+    { "@type": "Organization", name: "Clinton Global Real Estate" },
+    { "@type": "Organization", name: "Clinton Global AI Video Advertising" },
   ],
 };
 

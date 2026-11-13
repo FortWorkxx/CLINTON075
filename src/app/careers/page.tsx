@@ -5,17 +5,17 @@ import EnquiryForm from "@/components/EnquiryForm";
 export const metadata: Metadata = {
   title: "Careers — Join Clinton Global Investment",
   description:
-    "Open roles and applications across Clinton Global's marine, fashion, real estate and creative divisions in Lagos.",
+    "Open roles and applications across Clinton Global's marine, fashion, real estate and creative divisions in Port Harcourt.",
   alternates: { canonical: "/careers" },
 };
 
 const roles = [
-  { title: "Marine Technician (Four-Stroke)", division: "Marine Services", type: "Full time · Lagos", detail: "Diagnostics, servicing and installation on Yamaha, Suzuki and Mercury outboards. Minimum three years' hands-on experience." },
-  { title: "Fashion Production Coordinator", division: "Fashion", type: "Full time · Lagos", detail: "Pattern handover, tailoring quality control and production scheduling across made-to-measure orders." },
-  { title: "Property Listings Officer", division: "Real Estate", type: "Full time · Lagos", detail: "Vendor onboarding, listing documentation and inspection coordination. Property experience required." },
+  { title: "Marine Technician (Four-Stroke)", division: "Marine Services", type: "Full time · Port Harcourt", detail: "Diagnostics, servicing and installation on Yamaha, Suzuki and Mercury outboards. Minimum three years' hands-on experience." },
+  { title: "Fashion Production Coordinator", division: "Fashion", type: "Full time · Port Harcourt", detail: "Pattern handover, tailoring quality control and production scheduling across made-to-measure orders." },
+  { title: "Property Listings Officer", division: "Real Estate", type: "Full time · Port Harcourt", detail: "Vendor onboarding, listing documentation and inspection coordination. Property experience required." },
   { title: "Video Editor / Motion Designer", division: "AI Video Advertising", type: "Full time or contract", detail: "Editing, sound design and motion graphics for AI-assisted brand campaigns. Strong showreel required." },
-  { title: "Customer Support Associate", division: "Group", type: "Full time · Lagos", detail: "First-line support across all divisions — WhatsApp, email and order/booking follow-up." },
-  { title: "Sales Executive", division: "Group", type: "Full time · Lagos", detail: "Consultative selling across divisions, with proper CRM discipline and written follow-up." },
+  { title: "Customer Support Associate", division: "Group", type: "Full time · Port Harcourt", detail: "First-line support across all divisions — WhatsApp, email and order/booking follow-up." },
+  { title: "Sales Executive", division: "Group", type: "Full time · Port Harcourt", detail: "Consultative selling across divisions, with proper CRM discipline and written follow-up." },
 ];
 
 export default function CareersPage() {

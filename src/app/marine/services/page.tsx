@@ -7,7 +7,7 @@ import { marineServices } from "@/data/services";
 export const metadata: Metadata = {
   title: "Marine Services & Maintenance Packages",
   description:
-    "Outboard engine servicing, repairs, diagnostics, spare parts and marine equipment supply in Lagos and coastal Nigeria.",
+    "Outboard engine servicing, repairs, diagnostics, spare parts and marine equipment supply in Port Harcourt and coastal Nigeria.",
   alternates: { canonical: "/marine/services" },
 };
 

@@ -73,7 +73,7 @@ export default function PropertyBrowser({ compact = false }: { compact?: boolean
           <div>
             <label htmlFor="pb-city" className="label">Location</label>
             <select id="pb-city" value={city} onChange={(e) => setCity(e.target.value)} className="field">
-              <option value="">All Lagos areas</option>
+              <option value="">All locations</option>
               {cities.map((c) => <option key={c} value={c}>{c}</option>)}
             </select>
           </div>

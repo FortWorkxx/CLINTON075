@@ -73,7 +73,7 @@ export default function TermsPage() {
         {
           heading: "9. Governing law",
           paragraphs: [
-            "These terms are governed by the laws of the Federal Republic of Nigeria, and the courts of Lagos State have jurisdiction.",
+            "These terms are governed by the laws of the Federal Republic of Nigeria, and the courts of Rivers State have jurisdiction.",
           ],
         },
       ]}

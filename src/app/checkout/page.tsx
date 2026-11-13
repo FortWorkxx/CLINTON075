@@ -16,8 +16,8 @@ const nigerianStates = [
 
 const deliveryOptions = [
   { id: "standard", label: "Standard delivery", note: "2–5 working days", price: 4500 },
-  { id: "express", label: "Lagos express", note: "Next working day in Lagos", price: 8000 },
-  { id: "pickup", label: "Pick up at our Lekki office", note: "Ready in 1 working day", price: 0 },
+  { id: "express", label: "Port Harcourt express", note: "Next working day in Port Harcourt", price: 8000 },
+  { id: "pickup", label: "Pick up at our Port Harcourt office", note: "Ready in 1 working day", price: 0 },
 ];
 
 const paymentOptions = [
@@ -34,7 +34,7 @@ export default function CheckoutPage() {
   const [order, setOrder] = useState<{ id: string; total: number } | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [form, setForm] = useState({
-    name: "", email: "", phone: "", address: "", state: "Lagos", lga: "", notes: "",
+    name: "", email: "", phone: "", address: "", state: "Rivers", lga: "", notes: "",
   });
 
   const deliveryPrice = deliveryOptions.find((d) => d.id === delivery)?.price ?? 0;

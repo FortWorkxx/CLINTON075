@@ -9,9 +9,9 @@ import EnquiryForm from "@/components/EnquiryForm";
 import { site } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Real Estate — Properties, Land & Commercial Space in Lagos",
+  title: "Real Estate — Properties, Land & Commercial Space in Nigeria",
   description:
-    "Browse documented property listings across Lagos: duplexes, apartments, land and commercial space. Book an inspection and review documentation with our team.",
+    "Browse documented property listings in Port Harcourt and Lagos: duplexes, apartments, land and commercial space. Book an inspection and review documentation with our team.",
   alternates: { canonical: "/real-estate" },
 };
 
@@ -35,7 +35,7 @@ export default function RealEstatePage() {
             <span className="italic text-gold">handled with documentation.</span>
           </>
         }
-        description="Residential and commercial sales, rentals, land and advisory across Lagos. Every listing is inspected, fees are disclosed before inspection, and we recommend independent legal review on every transaction."
+        description="Residential and commercial sales, rentals, land and advisory in Port Harcourt, Rivers State and Lagos. Every listing is inspected, fees are disclosed before inspection, and we recommend independent legal review on every transaction."
         image="/images/division-realestate.jpg"
         crumbs={[{ label: "Divisions", href: "/services" }, { label: "Real Estate" }]}
         tall

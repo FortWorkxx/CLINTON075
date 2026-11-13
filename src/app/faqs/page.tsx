@@ -26,8 +26,8 @@ const grouped = [
         a: "Unworn fashion pieces with tags can be returned within 14 days of delivery for a refund or exchange, excluding bespoke and made-to-measure items. Return delivery is at the customer's cost unless the item was faulty or incorrect. Full terms are on our delivery and returns page.",
       },
       {
-        q: "Do you deliver outside Lagos?",
-        a: "Yes. Fashion orders are delivered nationwide within 2–5 working days, and internationally on request. Marine and property services are limited to Lagos and the coastal states, while AI video production is location-independent.",
+        q: "Do you deliver nationwide?",
+        a: "Yes. Fashion orders are delivered nationwide within 2–5 working days, and internationally on request. Marine services cover Rivers State and the coastal states, property listings are available in Port Harcourt and Lagos, and AI video production is location-independent.",
       },
     ],
   },

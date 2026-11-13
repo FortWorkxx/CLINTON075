@@ -7,7 +7,7 @@ import { engines } from "@/data/services";
 export const metadata: Metadata = {
   title: "Outboard Engine Catalogue — Yamaha, Suzuki, Mercury",
   description:
-    "Outboard engines from 25HP to 400HP supplied, rigged and sea-trialled in Lagos. New and certified pre-owned with warranty.",
+    "Outboard engines from 25HP to 400HP supplied, rigged and sea-trialled in Port Harcourt. New and certified pre-owned with warranty.",
   alternates: { canonical: "/marine/engines" },
 };
 

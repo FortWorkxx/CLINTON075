@@ -109,7 +109,7 @@ export default function ShopBrowser({
           <div className="rounded-xl border border-midnight/10 bg-white p-4">
             <p className="text-[11px] uppercase tracking-[0.14em] text-midnight/45">Delivery</p>
             <p className="mt-2 text-sm leading-relaxed text-midnight/60">
-              Lagos 1–2 days · Nationwide 2–5 days. Free over ₦150,000.
+              Rivers 1–2 days · Nationwide 2–5 days. Free over ₦150,000.
             </p>
           </div>
         </div>

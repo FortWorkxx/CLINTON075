@@ -17,7 +17,7 @@ export default function Dashboard() {
     name: "Demo Customer",
     email: "demo@example.com",
     phone: "+234 800 000 0000",
-    city: "Lagos",
+    city: "Port Harcourt",
   });
   const [saved, setSaved] = useState(false);
 

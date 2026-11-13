@@ -117,7 +117,7 @@ export default function HomePage() {
                 "AI-assisted commercial production",
                 "Nationwide delivery",
                 "Written quotations",
-                "Lagos · Nigeria",
+                "Port Harcourt · Nigeria",
               ].map((t) => (
                 <span
                   key={t}
@@ -140,7 +140,7 @@ export default function HomePage() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
                 <Image
                   src="/images/division-realestate.jpg"
-                  alt="Modern duplex in Lekki at dusk"
+                  alt="Modern duplex at dusk"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover"
@@ -183,7 +183,7 @@ export default function HomePage() {
                 },
                 {
                   t: "Who we serve",
-                  d: "Individuals, entrepreneurs and corporate organisations across Lagos, Nigeria and international markets.",
+                  d: "Individuals, entrepreneurs and corporate organisations across Port Harcourt, Nigeria and international markets.",
                 },
               ].map((b) => (
                 <div key={b.t} className="border-t border-midnight/10 pt-4">
@@ -361,7 +361,7 @@ export default function HomePage() {
             align="between"
             eyebrow="Property listings"
             title="Currently on the market"
-            description="Documented listings across Lagos, with inspections coordinated by our team and fees disclosed up front."
+            description="Documented listings in Port Harcourt and Lagos, with inspections coordinated by our team and fees disclosed up front."
             link={{ label: "Search all properties", href: "/real-estate" }}
           />
           <div className="mt-12 grid gap-6 md:grid-cols-3">

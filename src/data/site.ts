@@ -13,7 +13,7 @@ export const site = {
   whatsapp: "2348146111799",
   email: "godpowerclinton075@gmail.com",
   salesEmail: "godpowerclinton075@gmail.com",
-  address: "14B Admiralty Way, Lekki Phase 1, Lagos, Nigeria",
+  address: "18 Creek Road, Port Harcourt, Rivers State, Nigeria",
   hours: "Mon – Fri, 8:30am – 6:00pm · Sat, 9:00am – 3:00pm",
   rc: "Registration number to be supplied",
   socials: [
@@ -48,7 +48,7 @@ export const divisions: Division[] = [
     shortName: "Marine",
     tagline: "Power on the water",
     blurb:
-      "Outboard engine sales, installation, diagnostics and maintenance for boat owners, operators and fleet managers across Lagos and the coastal states.",
+      "Outboard engine sales, installation, diagnostics and maintenance for boat owners, operators and fleet managers across Port Harcourt, Rivers State and the coastal states.",
     image: "/images/division-marine.jpg",
     highlights: ["Outboard engine sales", "Repairs & maintenance", "Genuine spare parts"],
     cta: "Explore Marine",
@@ -176,8 +176,8 @@ export const faqs = [
     a: "No. Clinton Global Investment is one company with four operating divisions. Each division has its own team, service catalogue and booking process, but they share one corporate identity, one accounts function and one standard of service.",
   },
   {
-    q: "Do you work outside Lagos?",
-    a: "Yes. Marine and real estate work is concentrated in Lagos and the coastal states, while fashion delivery and AI video production are handled nationwide. We also take AI video briefs from international brands.",
+    q: "Do you work outside Port Harcourt?",
+    a: "Yes. Our head office is in Port Harcourt, with marine work concentrated in Rivers State and the coastal states, and real estate listings available in Port Harcourt and Lagos. Fashion delivery and AI video production are handled nationwide, and we take AI video briefs from international brands.",
   },
   {
     q: "How do quotations work?",

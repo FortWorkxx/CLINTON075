@@ -5,9 +5,9 @@ import EnquiryForm from "@/components/EnquiryForm";
 import { site } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Lagos Head Office",
+  title: "Contact Us — Port Harcourt Head Office",
   description:
-    "Contact Clinton Global Investment in Lekki, Lagos. Phone, WhatsApp, email and office visits for all four divisions.",
+    "Contact Clinton Global Investment at 18 Creek Road, Port Harcourt, Rivers State. Phone, WhatsApp, email and office visits for all four divisions.",
   alternates: { canonical: "/contact" },
 };
 
@@ -82,10 +82,10 @@ export default function ContactPage() {
               <div className="relative grid h-64 place-items-center bg-[linear-gradient(135deg,#eae6dd_25%,#f4f2ed_25%,#f4f2ed_50%,#eae6dd_50%,#eae6dd_75%,#f4f2ed_75%)] bg-[length:28px_28px]">
                 <div className="rounded-xl bg-white/95 px-6 py-5 text-center shadow-card">
                   <p className="text-[10px] uppercase tracking-[0.16em] text-midnight/40">Head office</p>
-                  <p className="mt-1 font-display text-lg text-midnight">Lekki Phase 1, Lagos</p>
+                  <p className="mt-1 font-display text-lg text-midnight">Port Harcourt, Rivers State</p>
                   <p className="mt-1 text-[11px] text-midnight/45">{site.address}</p>
                   <a
-                    href="https://maps.google.com/?q=Admiralty+Way+Lekki+Phase+1+Lagos"
+                    href="https://maps.google.com/?q=18+Creek+Road+Port+Harcourt+Rivers+State+Nigeria"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-3 inline-block text-[11px] font-semibold uppercase tracking-[0.12em] text-gold-dark hover:underline"

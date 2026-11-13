@@ -10,9 +10,9 @@ import { faqs } from "@/data/site";
 import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
-  title: "Marine Services — Outboard Engines, Repairs & Maintenance in Lagos",
+  title: "Marine Services — Outboard Engines, Repairs & Maintenance in Port Harcourt",
   description:
-    "Outboard engine sales, installation, diagnostics, servicing and genuine spare parts for boat owners and fleets in Lagos and coastal Nigeria.",
+    "Outboard engine sales, installation, diagnostics, servicing and genuine spare parts for boat owners and fleets in Port Harcourt, Rivers State and coastal Nigeria.",
   alternates: { canonical: "/marine" },
 };
 
@@ -36,7 +36,7 @@ export default function MarinePage() {
             <span className="italic text-gold">serviced properly.</span>
           </>
         }
-        description="Sales, installation, diagnostics and maintenance for outboard engines from 2.5HP to 425HP. Private boat owners, charter operators and fleets across Lagos and the coastal states."
+        description="Sales, installation, diagnostics and maintenance for outboard engines from 2.5HP to 425HP. Private boat owners, charter operators and fleets across Port Harcourt and the coastal states."
         image="/images/division-marine.jpg"
         crumbs={[{ label: "Divisions", href: "/services" }, { label: "Marine Services" }]}
         tall

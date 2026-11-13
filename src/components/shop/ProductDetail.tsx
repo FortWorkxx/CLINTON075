@@ -180,7 +180,7 @@ export default function ProductDetail({ product, related }: { product: Product; 
 
           <div className="mt-9 grid gap-px overflow-hidden rounded-xl border border-midnight/10 bg-midnight/10 sm:grid-cols-2">
             {[
-              { t: "Delivery", d: "Lagos 1–2 working days. Nationwide 2–5 days. Free over ₦150,000." },
+              { t: "Delivery", d: "Rivers 1–2 working days. Nationwide 2–5 days. Free over ₦150,000." },
               { t: "Returns", d: "14 days on unworn pieces with tags. Bespoke items excluded." },
               { t: "Payment", d: "Card, bank transfer or USSD via our Nigerian gateway." },
               { t: "Care", d: "Care instructions are sewn into every garment." },

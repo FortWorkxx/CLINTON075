@@ -64,7 +64,7 @@ export default function Header() {
             </a>
             <span className="h-3 w-px bg-white/15" />
             <Link href="/contact" className="transition hover:text-gold">
-              Lekki, Lagos
+              Port Harcourt, Rivers
             </Link>
           </div>
         </div>

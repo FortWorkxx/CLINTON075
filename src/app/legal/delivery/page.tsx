@@ -17,7 +17,7 @@ export default function DeliveryPage() {
         {
           heading: "1. Delivery timelines",
           list: [
-            "Lagos mainland and island: 1–2 working days after dispatch.",
+            "Rivers State and Port Harcourt: 1–2 working days after dispatch.",
             "Other Nigerian states: 2–5 working days after dispatch.",
             "Bespoke and made-to-measure pieces: 7–14 working days, confirmed at order.",
             "International delivery: quoted per order; duties and taxes are the customer's responsibility.",
@@ -26,7 +26,7 @@ export default function DeliveryPage() {
         {
           heading: "2. Delivery costs",
           paragraphs: [
-            "Standard delivery is ₦4,500 within Nigeria and free on orders over ₦150,000. Lagos express delivery is ₦8,000. Collection from our Lekki office is free and usually ready within one working day.",
+            "Standard delivery is ₦4,500 within Nigeria and free on orders over ₦150,000. Port Harcourt express delivery is ₦8,000. Collection from our Creek Road office in Port Harcourt is free and usually ready within one working day.",
           ],
         },
         {

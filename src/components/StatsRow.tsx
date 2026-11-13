@@ -54,6 +54,8 @@ export default function StatsRow() {
     return () => io.disconnect();
   }, []);
 
+  if (stats.length === 0) return null;
+
   return (
     <div ref={ref} className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4">
       {stats.map((s) => (

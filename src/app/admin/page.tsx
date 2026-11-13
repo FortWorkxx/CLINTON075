@@ -16,7 +16,7 @@ const modules = [
   { name: "Marine", note: "Services, bookings and equipment", status: "Live" },
   { name: "Fashion", note: "Products, stock and orders", status: "Live" },
   { name: "Real estate", note: "Properties, agents and inspections", status: "Live" },
-  { name: "AI advertising", note: "Projects, packages and quotations", status: "Live" },
+  { name: "AI Operator", note: "Requirements briefs and proposals", status: "Draft" },
   { name: "Customers", note: "Profiles and enquiry history", status: "Draft" },
   { name: "Payments", note: "Transactions and payment status", status: "Draft" },
   { name: "Content", note: "Homepage, banners and articles", status: "Draft" },
@@ -31,7 +31,7 @@ const roles = [
   { role: "Marine manager", scope: "Marine services, bookings and parts" },
   { role: "Fashion manager", scope: "Store, stock and orders" },
   { role: "Real estate manager", scope: "Listings, enquiries and inspections" },
-  { role: "Creative manager", scope: "AI video projects and quotations" },
+  { role: "AI operations manager", scope: "AI Operator briefs and projects" },
   { role: "Customer support", scope: "Enquiries, orders and bookings (read/write, no finance)" },
   { role: "Finance administrator", scope: "Payments and financial reports only" },
 ];

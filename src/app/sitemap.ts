@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/fashion",
     "/real-estate",
     "/ai-operator",
+    "/ai-operator/quote",
     "/marine",
     "/blog",
     "/contact",

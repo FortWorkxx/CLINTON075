@@ -32,7 +32,7 @@ export default function PaymentsPage() {
         {
           heading: "3. Deposits",
           paragraphs: [
-            "Bespoke fashion, marine repairs and video production may require a deposit to schedule work. Deposits cover materials, parts or production time already committed.",
+            "Bespoke fashion, marine repairs and automation pilots may require a deposit to schedule work. Deposits cover materials, parts or implementation time already committed.",
           ],
         },
         {

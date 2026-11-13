@@ -4,7 +4,7 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import { divisions } from "@/data/site";
-import { marineServices, creativeServices } from "@/data/services";
+import { marineServices } from "@/data/services";
 import { properties } from "@/data/properties";
 import { products } from "@/data/products";
 
@@ -80,7 +80,7 @@ export default function ServicesPage() {
           <h2 className="display-md mt-3">One transaction type per division</h2>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-midnight/60">
             We deliberately did not force every division into one checkout. A marine service is booked and quoted; a
-            fashion item is purchased; a property is inspected; a video project is scoped. Each flow is built for how
+            fashion item is purchased; a property is inspected; an automation brief is scoped. Each flow is built for how
             that work is actually bought.
           </p>
           <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -111,8 +111,8 @@ export default function ServicesPage() {
               { k: marineServices.length, l: "Marine service lines", href: "/marine/services" },
               { k: products.length, l: "Fashion pieces in store", href: "/fashion" },
               { k: properties.length, l: "Property listings", href: "/real-estate" },
-              { k: "To confirm", l: "AI Operator service scope", href: "/ai-operator" },
-              { k: "To confirm", l: "AI Operator packages", href: "/ai-operator" },
+              { k: 5, l: "Proposed AI capability areas", href: "/ai-operator" },
+              { k: 3, l: "AI engagement models", href: "/ai-operator/quote" },
               { k: 4, l: "Business divisions", href: "/portfolio" },
             ].map((s) => (
               <Link key={s.l} href={s.href} className="group rounded-xl border border-midnight/10 bg-white p-5 transition hover:border-gold">

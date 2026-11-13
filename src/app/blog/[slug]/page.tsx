@@ -126,7 +126,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               <div className="rounded-xl bg-midnight p-5 text-ivory">
                 <p className="text-[10px] uppercase tracking-[0.16em] text-gold">Division</p>
                 <p className="mt-2 text-sm text-ivory/70">{post.division}</p>
-                <Link href={post.division === "Marine" ? "/marine" : post.division === "Fashion" ? "/fashion" : post.division === "Real Estate" ? "/real-estate" : "/ai-video"} className="btn-gold mt-4 w-full !px-4 !py-2.5 !text-[10px]">
+                <Link href={post.division === "Marine" ? "/marine" : post.division === "Fashion" ? "/fashion" : post.division === "Real Estate" ? "/real-estate" : "/ai-operator"} className="btn-gold mt-4 w-full !px-4 !py-2.5 !text-[10px]">
                   Explore division
                 </Link>
               </div>

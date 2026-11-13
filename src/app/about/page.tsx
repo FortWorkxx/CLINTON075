@@ -4,7 +4,6 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
-import StatsRow from "@/components/StatsRow";
 import { divisions, site } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -18,12 +17,12 @@ const team = [
   { name: "Marine division", role: "Engine technicians & service coordinators", detail: "Four-stroke specialists, diagnostics, rigging and fleet maintenance scheduling." },
   { name: "Fashion division", role: "Design, tailoring & store operations", detail: "Pattern development, made-to-measure fitting, quality control and dispatch." },
   { name: "Real estate division", role: "Listings, inspections & documentation", detail: "Vendor onboarding, buyer screening, inspection coordination and documentation packs." },
-  { name: "Creative division", role: "Direction, production & post", detail: "Concept, script, AI generation, editing, sound design and voice-over." },
+  { name: "AI Operator division", role: "Automation, assistants & integration", detail: "Workflow mapping, approved-content assistants, integrations and staff training." },
 ];
 
 const values = [
   { t: "Accuracy over speed", d: "A written quote that holds is worth more than a fast estimate that changes. We would rather take a day longer and get the scope right." },
-  { t: "Documented work", d: "Service reports, listing documents, production briefs. If we did something, there is a record of it you can keep." },
+  { t: "Documented work", d: "Service reports, listing documents and project briefs. If we did something, there is a record of it you can keep." },
   { t: "Honest capability", d: "We say no to work we cannot deliver well. On every brief we will tell you what we can do, what we cannot, and where a specialist should be involved." },
   { t: "Client retention", d: "We measure success by whether clients come back for the second job, not by whether the first one closed." },
 ];
@@ -100,8 +99,19 @@ export default function AboutPage() {
 
       <section className="relative overflow-hidden bg-navy py-14 text-ivory">
         <div className="pointer-events-none absolute inset-0 grain opacity-40" />
-        <div className="shell relative">
-          <StatsRow />
+        <div className="shell relative grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            { v: "04", l: "Operating divisions", d: "Each with its own team and catalogue" },
+            { v: "PH", l: "Head office", d: "Port Harcourt, Rivers State" },
+            { v: "06", l: "Marine service lines", d: "Sales, rigging, service, repair, parts, equipment" },
+            { v: "NG", l: "Fashion delivery", d: "Nationwide, 2–5 working days" },
+          ].map((f) => (
+            <div key={f.l} className="border-t border-white/15 pt-4">
+              <p className="font-display text-3xl font-light text-gold">{f.v}</p>
+              <p className="mt-2 text-[11px] uppercase tracking-[0.16em] text-ivory/55">{f.l}</p>
+              <p className="mt-1.5 text-sm leading-relaxed text-ivory/35">{f.d}</p>
+            </div>
+          ))}
         </div>
       </section>
 

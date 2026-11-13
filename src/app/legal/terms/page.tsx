@@ -33,7 +33,7 @@ export default function TermsPage() {
         {
           heading: "3. Payments",
           paragraphs: [
-            "Online payments are processed by our payment provider. Where payment is by bank transfer, work or dispatch begins only after funds are confirmed. We may require a deposit for bespoke, production or marine work.",
+            "Online payments are processed by our payment provider. Where payment is by bank transfer, work or dispatch begins only after funds are confirmed. We may require a deposit for bespoke, implementation or marine work.",
           ],
         },
         {
@@ -59,7 +59,7 @@ export default function TermsPage() {
         {
           heading: "7. Video production and intellectual property",
           list: [
-            "On full payment, you receive the agreed final video files and a licence to use them as specified in your brief.",
+            "On full payment, you receive the agreed deliverables and a licence to use them as specified in your brief. For AI Operator work, the scope of any automated system, its limits and its data handling are set out in the proposal.",
             "We may retain the right to display work in our portfolio unless you request otherwise in writing.",
             "Third-party music, fonts or stock assets are licensed for the uses specified in the quotation; additional uses may require further licences.",
           ],

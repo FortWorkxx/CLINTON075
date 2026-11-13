@@ -90,6 +90,17 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+
+        <a
+          href="#introduction"
+          className="group absolute bottom-7 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-ivory/45 transition hover:text-gold lg:flex"
+          aria-label="Scroll to company introduction"
+        >
+          <span className="text-[9px] uppercase tracking-[0.3em]">Scroll</span>
+          <span className="relative h-10 w-px overflow-hidden bg-white/20">
+            <span className="absolute inset-x-0 top-0 h-4 animate-[scroll-cue_2.4s_ease-in-out_infinite] bg-gold" />
+          </span>
+        </a>
       </section>
 
       {/* ---------------- MARQUEE ---------------- */}
@@ -120,7 +131,7 @@ export default function HomePage() {
       </div>
 
       {/* ---------------- ABOUT ---------------- */}
-      <section className="relative py-20 lg:py-28">
+      <section id="introduction" className="relative scroll-mt-24 py-20 lg:py-28">
         <div className="shell grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
           <Reveal>
             <div className="relative">

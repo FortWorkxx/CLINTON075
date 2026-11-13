@@ -26,7 +26,7 @@ export default function EnquiryForm({
   fields: EnquiryField[];
   submitLabel?: string;
   tone?: "dark" | "light";
-  enquiryType?: "Marine" | "Real Estate" | "AI Video" | "General" | "Quotation";
+  enquiryType?: "Marine" | "Real Estate" | "AI Operator" | "General" | "Quotation";
   referencePrefix?: string;
   summaryLabel?: string;
   compact?: boolean;

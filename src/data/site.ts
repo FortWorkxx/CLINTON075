@@ -87,7 +87,7 @@ export const divisions: Division[] = [
     shortName: "AI Operator",
     tagline: "Intelligent digital operations",
     blurb:
-      "An emerging division focused on intelligent digital operations. The specific services offered will be confirmed before launch.",
+      "Practical automation of enquiry handling, administration and content — proposed around existing processes, with the scope of every engagement confirmed in writing.",
     image: "/images/division-ai.jpg",
     highlights: ["AI assistants", "Workflow automation", "Digital solutions"],
     cta: "View Our Work",

@@ -1,0 +1,175 @@
+@import "@fontsource/cormorant-garamond/300.css";
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/cormorant-garamond/400-italic.css";
+@import "@fontsource-variable/inter";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --midnight: #101820;
+    --navy: #253746;
+    --gold: #d6b46a;
+    --ivory: #f4f2ed;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ivory text-midnight antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  ::selection {
+    background: #d6b46a;
+    color: #101820;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid #d6b46a;
+    outline-offset: 3px;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-shell px-5 sm:px-8 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-widest2 text-gold;
+  }
+
+  .display-xl {
+    @apply font-display text-[2.6rem] leading-[1.03] sm:text-6xl lg:text-[4.5rem] lg:leading-[0.98];
+  }
+
+  .display-lg {
+    @apply font-display text-[2.1rem] leading-[1.06] sm:text-5xl lg:text-[3.4rem];
+  }
+
+  .display-md {
+    @apply font-display text-2xl leading-tight sm:text-3xl lg:text-4xl;
+  }
+
+  .body-lg {
+    @apply text-base leading-relaxed text-midnight/70 sm:text-lg;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-[13px] font-semibold uppercase tracking-[0.14em] transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-gold {
+    @apply btn bg-gold text-midnight hover:bg-gold-light hover:shadow-gold;
+  }
+
+  .btn-dark {
+    @apply btn bg-midnight text-ivory hover:bg-navy;
+  }
+
+  .btn-outline {
+    @apply btn border border-midnight/25 text-midnight hover:border-gold hover:text-gold-dark;
+  }
+
+  .btn-light {
+    @apply btn border border-white/25 bg-white/5 text-ivory backdrop-blur hover:border-gold hover:bg-white/10 hover:text-gold;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.14em] text-midnight transition-colors hover:text-gold-dark;
+  }
+
+  /* Forms */
+  .field {
+    @apply w-full rounded-xl border border-midnight/15 bg-white px-4 py-3.5 text-sm text-midnight outline-none transition placeholder:text-slate/70 focus:border-gold focus:ring-2 focus:ring-gold/25;
+  }
+
+  .field-dark {
+    @apply w-full rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3.5 text-sm text-ivory outline-none transition placeholder:text-ivory/35 focus:border-gold focus:ring-2 focus:ring-gold/20;
+  }
+
+  .field-dark option {
+    color: #101820;
+    background-color: #f4f2ed;
+  }
+
+  .label {
+    @apply mb-2 block text-[11px] font-semibold uppercase tracking-[0.16em] text-midnight/60;
+  }
+
+  .label-dark {
+    @apply mb-2 block text-[11px] font-semibold uppercase tracking-[0.16em] text-ivory/50;
+  }
+
+  .card {
+    @apply rounded-2xl border border-midnight/10 bg-white;
+  }
+
+  .hairline {
+    @apply border-t border-midnight/10;
+  }
+
+  .hairline-dark {
+    @apply border-t border-white/10;
+  }
+
+  .link-underline {
+    @apply relative inline-block after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  .grain {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 3px 3px;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

@@ -7,7 +7,7 @@ import { posts } from "@/data/blog";
 export const metadata: Metadata = {
   title: "Insights — Guides from Our Teams",
   description:
-    "Practical guides on outboard engine maintenance, Nigerian property documentation, wardrobe building and AI video production.",
+    "Practical guides on outboard engine maintenance, Nigerian property documentation, wardrobe building and intelligent digital operations.",
   alternates: { canonical: "/blog" },
 };
 

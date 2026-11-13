@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    return [{ source: "/ai-video/:path*", destination: "/ai-operator", permanent: true }];
+  },
   async headers() {
     return [
       {

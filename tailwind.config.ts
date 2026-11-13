@@ -9,21 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        midnight: "#101820",
+        midnight: "#101C2A",
         navy: "#253746",
         gold: {
-          DEFAULT: "#D6B46A",
+          DEFAULT: "#D4AF70",
           light: "#E7D3A1",
           dark: "#A9873F",
         },
-        ivory: "#F4F2ED",
+        ivory: "#F7F7F4",
+        charcoal: "#272B30",
         slate: {
           DEFAULT: "#777F85",
         },
       },
       fontFamily: {
         display: [
-          "Cormorant Garamond",
+          "Manrope Variable",
           "Iowan Old Style",
           "Palatino Linotype",
           "Georgia",

@@ -15,7 +15,7 @@ export default function PortfolioPage() {
       <PageHero
         eyebrow="Selected work"
         title={<>Projects across<br /><span className="italic text-gold">four disciplines.</span></>}
-        description="Completed and current work across marine, fashion, real estate and AI video. Each entry states the objective, deliverables and any results reported by the client."
+        description="Selected portfolio examples across business divisions. Specific case studies should be confirmed before publication."
         image="/images/boat-cruise.jpg"
         crumbs={[{ label: "Portfolio" }]}
         tall

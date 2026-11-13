@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         {
           heading: "1. Who we are",
           paragraphs: [
-            `${site.name} is a Nigerian company operating marine, fashion, real estate and AI video advertising divisions. For questions about this policy, contact us at ${site.email}.`,
+            `${site.name} is a Nigerian company operating marine, fashion, real estate and AI Operator divisions. For questions about this policy, contact us at ${site.email}.`,
             "We process personal data in line with the Nigeria Data Protection Act 2023 (NDPA) and applicable guidance from the Nigeria Data Protection Commission (NDPC).",
           ],
         },

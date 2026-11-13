@@ -25,7 +25,7 @@ export default function NotFound() {
             { l: "Fashion store", h: "/fashion" },
             { l: "Property listings", h: "/real-estate" },
             { l: "Marine services", h: "/marine" },
-            { l: "AI video advertising", h: "/ai-video" },
+            { l: "AI Operator", h: "/ai-operator" },
             { l: "Portfolio", h: "/portfolio" },
             { l: "Insights", h: "/blog" },
           ].map((l) => (

@@ -6,8 +6,7 @@ const companyLinks = [
   { label: "About Us", href: "/about" },
   { label: "Our Divisions", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Testimonials", href: "/testimonials" },
-  { label: "Insights", href: "/blog" },
+    { label: "Insights", href: "/blog" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
@@ -16,7 +15,7 @@ const platformLinks = [
   { label: "Fashion Store", href: "/fashion" },
   { label: "Properties", href: "/real-estate" },
   { label: "Marine Booking", href: "/marine/booking" },
-  { label: "AI Video Quotes", href: "/ai-video/quote" },
+  { label: "AI Operator", href: "/ai-operator" },
   { label: "Get a Quote", href: "/quote" },
   { label: "Track an Order", href: "/track" },
   { label: "My Account", href: "/account" },
@@ -68,8 +67,7 @@ export default function Footer() {
         <div>
           <Logo tone="light" />
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-ivory/50">
-            A Nigerian multi-service company operating marine, fashion, real estate and AI video
-            advertising divisions under one corporate identity.
+            A Nigerian multi-service brand bringing marine, real estate, fashion and intelligent digital possibilities together.
           </p>
           <div className="mt-6 space-y-2 text-sm">
             <p className="text-ivory/70">{site.address}</p>

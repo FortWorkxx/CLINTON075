@@ -7,7 +7,7 @@ import { testimonials } from "@/data/site";
 export const metadata: Metadata = {
   title: "Testimonials — Client Feedback",
   description:
-    "Feedback from clients across Clinton Global's marine, fashion, real estate and AI video divisions.",
+    "Customer feedback will be published after it has been verified and approved for use.",
   alternates: { canonical: "/testimonials" },
 };
 
@@ -17,7 +17,7 @@ export default function TestimonialsPage() {
       <PageHero
         eyebrow="Client feedback"
         title={<>What clients say.</>}
-        description="Published with client permission. Names are shortened where requested, and no testimonial is edited to change its meaning."
+        description="We do not publish unverified testimonials. Approved client feedback will appear here when available."
         image="/images/property-2.jpg"
         crumbs={[{ label: "Testimonials" }]}
       />
@@ -47,10 +47,7 @@ export default function TestimonialsPage() {
               </Reveal>
             ))}
           </div>
-          <p className="mt-8 rounded-xl border border-midnight/10 bg-white px-5 py-4 text-[11px] leading-relaxed text-midnight/45">
-            Testimonials are illustrative in this demo build. Before launch, each quote should be confirmed in writing
-            with the client, including permission to use their name, photograph or company logo.
-          </p>
+          {testimonials.length === 0 && <p className="rounded-xl border border-midnight/10 bg-white px-5 py-8 text-center text-sm text-midnight/60">No verified testimonials are available yet. We will add client feedback here only with permission.</p>}
 
           <div className="mt-10 rounded-2xl bg-midnight p-8 text-ivory sm:p-10">
             <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr] lg:items-center">

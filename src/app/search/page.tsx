@@ -52,8 +52,8 @@ const allResults: Result[] = [
   ...creativeServices.map((s) => ({
     id: `c-${s.title}`,
     title: s.title,
-    meta: "AI video advertising",
-    href: "/ai-video",
+    meta: "AI Operator",
+    href: "/ai-operator",
     image: "/images/division-ai.jpg",
     group: "Services" as const,
     text: `${s.title} ${s.body}`,

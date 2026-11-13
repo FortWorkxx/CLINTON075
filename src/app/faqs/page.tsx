@@ -27,7 +27,7 @@ const grouped = [
       },
       {
         q: "Do you deliver nationwide?",
-        a: "Yes. Fashion orders are delivered nationwide within 2–5 working days, and internationally on request. Marine services cover Rivers State and the coastal states, property listings are available in Port Harcourt and Lagos, and AI video production is location-independent.",
+        a: "Yes. Fashion orders are delivered nationwide within 2–5 working days, and internationally on request. Marine services cover Rivers State and the coastal states, property listings are available in Port Harcourt and Lagos, and AI Operator service availability will be confirmed with each enquiry.",
       },
     ],
   },
@@ -117,7 +117,7 @@ export default function FaqsPage() {
                   fields={[
                     { name: "name", label: "Full name", required: true },
                     { name: "email", label: "Email", type: "email", required: true },
-                    { name: "division", label: "Related to", type: "select", options: ["Marine", "Fashion", "Real Estate", "AI Video", "General"] },
+                    { name: "division", label: "Related to", type: "select", options: ["Marine", "Fashion", "Real Estate", "AI Operator", "General"] },
                     { name: "message", label: "Your question", type: "textarea", required: true },
                   ]}
                 />

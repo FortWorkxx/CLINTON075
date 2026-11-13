@@ -1,138 +1,49 @@
-# Clinton Global Investment — Website
+# CLINTON GLOBAL INVESTMENT — Website implementation notes
 
-A production-ready **Next.js 15** marketing and commerce website for a Nigerian multi-service company, built to the specification in [`README.md`](./README.md).
-
-One corporate brand. Four divisions: **Marine Services**, **Fashion**, **Real Estate**, **AI Video Advertising**.
-
----
+Premium Nigerian multi-division website built with Next.js 15, React 19, Tailwind CSS, and the blueprint in `README.md`.
 
 ## Quick start
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
-npm run build    # production build
-npm start        # serve production build
+npm run dev
+npm run build
 ```
 
-Requires Node 18.18+ (tested on Node 22).
+## Current build
 
----
+The app includes a cinematic corporate homepage, division directory, marine service and booking pages, property discovery and property details, fashion catalogue/cart/checkout/wishlist, quotation/contact flows, customer account preview, staff dashboard preview, legal drafts, search, insights, WhatsApp enquiry menu, and a guided assistant preview.
 
-## What is built
+Division 04 is presented as **AI Operator**, matching the supplied blueprint. Its exact real-world service scope remains unconfirmed; the landing page explicitly calls proposed capability areas provisional. Historic `/ai-video/*` links permanently redirect to `/ai-operator`.
 
-### Corporate
-| Route | Purpose |
-| --- | --- |
-| `/` | Homepage — cinematic hero, division switcher, about, four divisions, why-us, featured products, featured properties, stats, portfolio, testimonials, insights, enquiry form, footer |
-| `/about` | Company story, mission, vision, values, group structure |
-| `/services` | Division comparison hub and engagement model |
-| `/portfolio` | Filterable project portfolio (all four divisions) |
-| `/testimonials` | Client feedback |
-| `/faqs` | Grouped FAQ accordion + FAQPage structured data |
-| `/careers` | Open roles + application form |
-| `/contact` | Contact details, division emails, map panel, enquiry form |
-| `/quote` | Unified quotation request across all divisions |
-| `/search` | Site-wide grouped search (products, properties, services, articles) |
-| `/admin` | Read-only staff dashboard preview (modules, KPIs, roles) |
-| `/legal/*` | Privacy, terms, payments, delivery, cookies, property disclaimer |
-
-### Marine (Division 01)
-`/marine` · `/marine/services` · `/marine/engines` · `/marine/booking`
-Service catalogue, engine table (25–400 HP), indicative service packages, full booking form with engine details, image upload and compatibility-check CTA.
-
-### Fashion (Division 02)
-`/fashion` · `/fashion/lookbook` · `/fashion/product/[slug]` · `/cart` · `/checkout` · `/wishlist`
-Filterable shop (category, price, search, stock), product pages with colour/size/qty selection, wishlist, cart with discount codes, validated multi-step checkout, guest order confirmation.
-
-### Real Estate (Division 03)
-`/real-estate` · `/real-estate/[slug]`
-Advanced property search (purpose, type, city, bedrooms, price, furnished, keyword), listing pages with gallery lightbox, specifications, documentation block, location panel, inspection booking form, WhatsApp enquiry and save-to-list.
-
-### AI Video Advertising (Division 04)
-`/ai-video` · `/ai-video/work` · `/ai-video/quote`
-Creative services, case-study cards, three packages, detailed production brief form (audience, duration, style, platform, voice-over, budget, file upload).
-
-### Customer account
-`/account` — orders, enquiries/quotes, saved pieces, saved properties, profile.
-`/track` — order tracking by reference.
-Cart, wishlist, orders, enquiries and saved properties persist in `localStorage` via a React context store.
-
----
-
-## Design system
+## Brand tokens
 
 | Token | Value |
 | --- | --- |
-| Midnight | `#101820` |
-| Navy | `#253746` |
-| Gold | `#D6B46A` (light `#E7D3A1`, dark `#A9873F`) |
-| Ivory | `#F4F2ED` |
-| Slate | `#777F85` |
-| Display font | Cormorant Garamond (self-hosted via `@fontsource`) |
-| Body font | Inter Variable (self-hosted) |
+| Midnight Navy | `#101C2A` |
+| Champagne Gold | `#D4AF70` |
+| Ivory White | `#F7F7F4` |
+| Charcoal | `#272B30` |
+| Display / navigation | Manrope Variable |
+| Body | Inter Variable |
 
-- Tailwind CSS with custom tokens in `tailwind.config.ts`, component classes (`.btn-gold`, `.field`, `.display-lg`…) in `src/app/globals.css`.
-- Scroll-reveal animations use a small `IntersectionObserver` wrapper (`Reveal.tsx`) rather than an animation library — no extra runtime cost.
-- Fully responsive, mobile drawer navigation, mega-menu on desktop, sticky WhatsApp floating action button with per-division deep links.
-- Respects `prefers-reduced-motion`.
+## Pre-launch verification required
 
----
+Blueprint Section 16 contains business details that have not been confirmed. Do not treat content currently in the demo data layer as verified company information. Before public launch, review `src/data/site.ts`, `src/data/services.ts`, `src/data/products.ts`, `src/data/properties.ts`, `src/data/projects.ts`, `src/data/blog.ts`, and the contact/legal page copy. In particular confirm:
 
-## Project structure
+- Operating location, official contact details, company registration, domain, and social accounts.
+- Which marine, property, fashion, and AI Operator services/products are genuinely offered, and where.
+- Availability and accuracy of all product prices, stock, property listings, project examples, delivery terms, and operational claims.
+- AI Operator's actual meaning and whether it is a service division at all.
+- Nigerian data protection disclosures, terms, returns, property disclaimers, and division-specific conditions with qualified counsel.
 
-```
-src/
-  app/                 # App Router pages (47 routes, mostly static)
-    layout.tsx         # Metadata, Organization schema, header/footer, store provider
-    sitemap.ts robots.ts icon.svg
-  components/
-    Header.tsx Footer.tsx Logo.tsx PageHero.tsx SectionHeading.tsx
-    Reveal.tsx StatsRow.tsx WhatsAppFab.tsx EnquiryForm.tsx LegalPage.tsx
-    shop/              # ProductCard, ShopBrowser, ProductDetail
-    property/          # PropertyBrowser, PropertyGallery, PropertyActions
-    account/Dashboard.tsx
-    store/StoreProvider.tsx
-  data/                # Typed content layer (site, products, properties, services, projects, blog)
-public/images/         # Generated brand imagery
-```
+Verified stats and customer testimonials are deliberately omitted from public components/data until substantiated and approved. Do not add estimates or placeholders as factual social proof.
 
-All copy, pricing, listings and articles live in `src/data/*` as typed objects — edit content there without touching layout code.
+## Demo limitations
 
----
-
-## SEO & accessibility
-
-- Per-page titles, descriptions, canonical URLs, Open Graph and Twitter cards.
-- `Organization`, `Product`, `RealEstateListing`, `Article` and `FAQPage` JSON-LD.
-- `sitemap.xml` and `robots.txt` generated from the data layer; account, cart, checkout and admin excluded.
-- Descriptive image alt text, skip-to-content link, visible focus rings, labelled form fields with inline validation messages, semantic landmarks, `aria-pressed`/`aria-expanded` on interactive controls.
-
----
-
-## Demo limitations (before going live)
-
-These are deliberate, documented gaps in the static build:
-
-1. **Persistence is browser-local.** Cart, wishlist, orders and enquiries use `localStorage`. Add PostgreSQL + an auth provider (e.g. NextAuth/Auth.js) for real accounts.
-2. **Payments are not processed.** Checkout records an order and confirms it; no card data is collected. Integrate Paystack or Flutterwave with server-side verification and a webhook.
-3. **Enquiries are not delivered.** The forms validate and show a reference, then store locally. Connect Resend (email), a CRM, or a database handler in `EnquiryForm.tsx`.
-4. **Live details vs. placeholders.** Company name (Clinton Global Investment), phone (0814 611 1799 / +234 814 611 1799), WhatsApp and email (godpowerclinton075@gmail.com) are configured in `src/data/site.ts` and used throughout the site, WhatsApp links and structured data. Still placeholders: RC/CAC number, office address, social handles and the domain in `site.url` — update these in the same file. Replace `src/app/icon.svg` and the logo mark if you have official brand artwork.
-5. **Placeholder media.** Images are AI-generated brand visuals; portfolio video previews are placeholders. Metrics and testimonials are illustrative and must be replaced with substantiated figures and written client permission.
-6. **`/admin` is unauthenticated** for review. Protect or remove it before deployment.
-7. **Legal pages are drafts.** Have them reviewed by a qualified Nigerian legal professional (NDPA 2023 compliance included).
-
----
-
-## Recommended next integrations
-
-| Need | Suggested |
-| --- | --- |
-| Database | PostgreSQL (Neon/Supabase) + Prisma |
-| Auth | Auth.js with role-based access (see roles in `/admin`) |
-| Payments | Paystack (primary), Flutterwave (fallback) |
-| Email | Resend for transactional + enquiry notifications |
-| Media | Cloudinary for product/gallery images and campaign video |
-| Analytics | Google Analytics 4 + Search Console verification |
-| Maps | Google Maps embed on contact and property pages |
-| Monitoring | Sentry (errors) + uptime check |
+- Cart, wishlist, orders, and account data persist only in browser `localStorage`; there is no real database or authentication.
+- Checkout does not process payments. Integrate Paystack or Flutterwave with server-side verification and webhooks.
+- Enquiries are not delivered to staff; connect a backend, CRM, and email/SMS provider.
+- `/admin` is an unauthenticated, read-only preview and must be protected or removed before production.
+- The Clinton AI Assistant is a guided navigation preview, not an AI model or live customer-support connection.
+- Legal copy is draft content, not legal advice.

@@ -11,7 +11,7 @@ const divisionIcons: Record<string, string> = {
   marine: "⚓",
   fashion: "◈",
   "real-estate": "⌂",
-  "ai-video": "▶",
+  "ai-operator": "✳",
 };
 
 export default function Header() {
@@ -93,7 +93,7 @@ export default function Header() {
                     onClick={() => setMegaOpen((v) => !v)}
                     aria-expanded={megaOpen}
                     className={`flex items-center gap-1.5 text-[12px] font-medium uppercase tracking-[0.14em] transition-colors ${
-                      megaOpen || pathname.startsWith("/marine") || pathname.startsWith("/fashion") || pathname.startsWith("/real-estate") || pathname.startsWith("/ai-video")
+                      megaOpen || pathname.startsWith("/marine") || pathname.startsWith("/fashion") || pathname.startsWith("/real-estate") || pathname.startsWith("/ai-operator")
                         ? "text-gold"
                         : "text-ivory/80 hover:text-gold"
                     }`}

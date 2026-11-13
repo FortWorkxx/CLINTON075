@@ -10,7 +10,7 @@ import { divisions, site } from "@/data/site";
 export const metadata: Metadata = {
   title: "About Us — One Company, Four Divisions",
   description:
-    "Clinton Global Investment is a Nigerian multi-service company operating marine, fashion, real estate and AI video advertising divisions under one corporate identity.",
+    "Clinton Global Investment is a Nigerian multi-service company operating marine, fashion, real estate and AI Operator divisions under one corporate identity.",
   alternates: { canonical: "/about" },
 };
 

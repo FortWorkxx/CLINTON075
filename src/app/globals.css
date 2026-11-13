@@ -1,8 +1,4 @@
-@import "@fontsource/cormorant-garamond/300.css";
-@import "@fontsource/cormorant-garamond/400.css";
-@import "@fontsource/cormorant-garamond/500.css";
-@import "@fontsource/cormorant-garamond/600.css";
-@import "@fontsource/cormorant-garamond/400-italic.css";
+@import "@fontsource-variable/manrope";
 @import "@fontsource-variable/inter";
 
 @tailwind base;
@@ -11,10 +7,10 @@
 
 @layer base {
   :root {
-    --midnight: #101820;
+    --midnight: #101c2a;
     --navy: #253746;
-    --gold: #d6b46a;
-    --ivory: #f4f2ed;
+    --gold: #d4af70;
+    --ivory: #f7f7f4;
   }
 
   * {
@@ -31,8 +27,8 @@
   }
 
   ::selection {
-    background: #d6b46a;
-    color: #101820;
+    background: #d4af70;
+    color: #101c2a;
   }
 
   h1,
@@ -48,7 +44,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid #d6b46a;
+    outline: 2px solid #d4af70;
     outline-offset: 3px;
   }
 
@@ -119,8 +115,8 @@
   }
 
   .field-dark option {
-    color: #101820;
-    background-color: #f4f2ed;
+    color: #101c2a;
+    background-color: #f7f7f4;
   }
 
   .label {

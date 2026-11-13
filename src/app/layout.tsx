@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFab from "@/components/WhatsAppFab";
+import ClintonAssistant from "@/components/ClintonAssistant";
 import CookieConsent from "@/components/CookieConsent";
 import { StoreProvider } from "@/components/store/StoreProvider";
 import { site } from "@/data/site";
@@ -10,7 +11,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — Marine, Fashion, Real Estate & AI Video Advertising`,
+    default: `${site.name} — Marine, Real Estate, Fashion & AI Operator`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     "marine equipment Port Harcourt",
     "online fashion store Nigeria",
     "properties for sale in Nigeria",
-    "AI video advertising agency Nigeria",
+    "AI business operations Nigeria",
     "real estate Port Harcourt",
     "marine services Port Harcourt",
     "Clinton Global Investment",
@@ -29,13 +30,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_NG",
     siteName: site.name,
-    title: `${site.name} — One Company. Multiple Solutions.`,
+    title: `${site.name} — Expanding Possibilities. Delivering Excellence.`,
     description: site.description,
     images: [{ url: "/images/hero-marina.jpg", width: 1200, height: 630, alt: site.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — One Company. Multiple Solutions.`,
+    title: `${site.name} — Expanding Possibilities. Delivering Excellence.`,
     description: site.description,
     images: ["/images/hero-marina.jpg"],
   },
@@ -69,7 +70,7 @@ const orgSchema = {
     { "@type": "Organization", name: "Clinton Global Marine Services" },
     { "@type": "Organization", name: "Clinton Global Fashion" },
     { "@type": "Organization", name: "Clinton Global Real Estate" },
-    { "@type": "Organization", name: "Clinton Global AI Video Advertising" },
+    { "@type": "Organization", name: "Clinton Global AI Operator" },
   ],
 };
 
@@ -94,6 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <Footer />
           <WhatsAppFab />
+          <ClintonAssistant />
           <CookieConsent />
         </StoreProvider>
       </body>

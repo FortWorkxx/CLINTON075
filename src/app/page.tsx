@@ -2,9 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
-import StatsRow from "@/components/StatsRow";
 import EnquiryForm from "@/components/EnquiryForm";
-import { divisions, site, testimonials, trustPoints } from "@/data/site";
+import { divisions, site, trustPoints } from "@/data/site";
 import { products, formatNaira } from "@/data/products";
 import { properties } from "@/data/properties";
 import { projects } from "@/data/projects";
@@ -36,15 +35,15 @@ export default function HomePage() {
           <div className="animate-fade-up">
             <div className="flex items-center gap-3">
               <span className="h-px w-10 bg-gold" />
-              <p className="eyebrow">Marine · Fashion · Real Estate · AI Video</p>
+              <p className="eyebrow">Marine · Real Estate · Fashion · AI Operator</p>
             </div>
             <h1 className="display-xl mt-6 max-w-3xl text-ivory">
-              Your trusted partner<br />
-              across <span className="italic text-gold">multiple industries.</span>
+              A world of opportunities.<br />
+              <span className="italic text-gold">One global vision.</span>
             </h1>
             <p className="mt-7 max-w-xl text-base leading-relaxed text-ivory/65 sm:text-lg">
-              From marine engineering and contemporary fashion to real estate and AI-powered video
-              advertising — four specialist divisions, one professional Nigerian brand.
+              Marine services, property, fashion and intelligent digital possibilities — brought together
+              under one Nigerian corporate brand.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <Link href="/services" className="btn-gold">
@@ -62,18 +61,6 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <dl className="mt-14 flex flex-wrap gap-x-10 gap-y-5 border-t border-white/10 pt-7">
-              {[
-                { k: "4", v: "Business divisions" },
-                { k: "12+", v: "Years combined experience" },
-                { k: "640+", v: "Jobs delivered" },
-              ].map((s) => (
-                <div key={s.v}>
-                  <dt className="font-display text-2xl text-gold">{s.k}</dt>
-                  <dd className="mt-1 text-[11px] uppercase tracking-[0.16em] text-ivory/40">{s.v}</dd>
-                </div>
-              ))}
-            </dl>
           </div>
 
           {/* Division quick switcher */}
@@ -111,13 +98,13 @@ export default function HomePage() {
           {[0, 1].map((dup) => (
             <div key={dup} className="flex gap-10" aria-hidden={dup === 1}>
               {[
-                "Outboard engine specialists",
-                "Made-to-measure tailoring",
-                "Documented property listings",
-                "AI-assisted commercial production",
-                "Nationwide delivery",
-                "Written quotations",
-                "Port Harcourt · Nigeria",
+                "Marine solutions",
+                "Real estate",
+                "Fashion",
+                "AI Operator",
+                "One vision · multiple industries",
+                "Expanding possibilities",
+                "Delivering excellence",
               ].map((t) => (
                 <span
                   key={t}
@@ -404,24 +391,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ---------------- STATS ---------------- */}
-      <section className="relative overflow-hidden bg-navy py-16 text-ivory lg:py-20">
-        <div className="pointer-events-none absolute inset-0 grain opacity-40" />
-        <div className="shell relative grid gap-12 lg:grid-cols-[1fr_1.2fr] lg:items-center">
-          <div>
-            <p className="eyebrow">By the numbers</p>
-            <h2 className="display-md mt-4 max-w-sm text-ivory">
-              Track record across four industries.
-            </h2>
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-ivory/50">
-              Figures reflect work completed across our divisions to date. We publish only numbers we can
-              substantiate, and update them as the business grows.
-            </p>
-          </div>
-          <StatsRow />
-        </div>
-      </section>
-
       {/* ---------------- PORTFOLIO ---------------- */}
       <section className="py-20 lg:py-28">
         <div className="shell">
@@ -429,7 +398,7 @@ export default function HomePage() {
             align="between"
             eyebrow="Selected work"
             title="Recent projects"
-            description="A snapshot of completed work across marine, fashion, real estate and AI video production."
+            description="A snapshot of selected work across our business divisions."
             link={{ label: "Full portfolio", href: "/portfolio" }}
           />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -460,52 +429,6 @@ export default function HomePage() {
                 </article>
               </Reveal>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ---------------- TESTIMONIALS ---------------- */}
-      <section className="relative overflow-hidden bg-midnight py-20 text-ivory lg:py-28">
-        <div className="pointer-events-none absolute inset-0 grain opacity-40" />
-        <div className="shell relative">
-          <SectionHeading
-            tone="light"
-            align="center"
-            eyebrow="Client feedback"
-            title={
-              <>
-                What clients say about<br />
-                <span className="italic text-gold">working with us.</span>
-              </>
-            }
-            description="Testimonials are published with client permission. Names are shortened where requested."
-          />
-          <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {testimonials.slice(0, 3).map((t, i) => (
-              <Reveal key={t.name} delay={i * 90}>
-                <figure className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-7">
-                  <div className="flex gap-1 text-gold" aria-label="5 out of 5">
-                    {Array.from({ length: 5 }).map((_, k) => (
-                      <span key={k} aria-hidden="true">★</span>
-                    ))}
-                  </div>
-                  <blockquote className="mt-5 flex-1 font-display text-lg leading-relaxed text-ivory/85">
-                    “{t.quote}”
-                  </blockquote>
-                  <figcaption className="mt-6 border-t border-white/10 pt-4">
-                    <p className="text-sm font-medium text-ivory">{t.name}</p>
-                    <p className="mt-0.5 text-[11px] text-ivory/40">
-                      {t.role} · {t.division}
-                    </p>
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
-          </div>
-          <div className="mt-10 text-center">
-            <Link href="/testimonials" className="btn-light">
-              Read all testimonials
-            </Link>
           </div>
         </div>
       </section>
@@ -625,7 +548,7 @@ export default function HomePage() {
                   label: "Division of interest",
                   type: "select",
                   required: true,
-                  options: ["Marine Services", "Fashion", "Real Estate", "AI Video Advertising", "More than one"],
+                  options: ["Marine Services", "Fashion", "Real Estate", "AI Operator", "More than one"],
                 },
                 {
                   name: "subject",

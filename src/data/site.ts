@@ -4,9 +4,9 @@ export const site = {
   legalName: "Clinton Global Investment",
   logoMark: "C",
   logoSuffix: "GLOBAL",
-  tagline: "One Company. Multiple Solutions. Exceptional Experiences.",
+  tagline: "Expanding Possibilities. Delivering Excellence.",
   description:
-    "A Nigerian multi-service company operating four divisions: marine services and outboard engines, contemporary fashion, real estate, and AI video advertising.",
+    "A Nigerian multi-service company operating four divisions: marine services and outboard engines, contemporary fashion, real estate, and an AI Operator division.",
   url: "https://clintonglobalinvestment.com",
   phone: "0814 611 1799",
   phoneHref: "+2348146111799",
@@ -25,7 +25,7 @@ export const site = {
   ],
 };
 
-export type DivisionSlug = "marine" | "fashion" | "real-estate" | "ai-video";
+export type DivisionSlug = "marine" | "fashion" | "real-estate" | "ai-operator";
 
 export type Division = {
   slug: DivisionSlug;
@@ -81,17 +81,17 @@ export const divisions: Division[] = [
     href: "/real-estate",
   },
   {
-    slug: "ai-video",
+    slug: "ai-operator",
     number: "04",
-    name: "AI Video Advertising",
-    shortName: "AI Video Ads",
-    tagline: "Commercials at cinematic speed",
+    name: "AI Operator",
+    shortName: "AI Operator",
+    tagline: "Intelligent digital operations",
     blurb:
-      "AI-assisted commercials, product films and social campaigns produced for brands that need premium video without a full production crew.",
+      "An emerging division focused on intelligent digital operations. The specific services offered will be confirmed before launch.",
     image: "/images/division-ai.jpg",
-    highlights: ["Product commercials", "Social video ads", "Brand storytelling"],
+    highlights: ["AI assistants", "Workflow automation", "Digital solutions"],
     cta: "View Our Work",
-    href: "/ai-video",
+    href: "/ai-operator",
   },
 ];
 
@@ -125,50 +125,9 @@ export const trustPoints = [
   },
 ];
 
-export const stats = [
-  { value: 4, suffix: "", label: "Business divisions" },
-  { value: 12, suffix: "+", label: "Years combined experience" },
-  { value: 640, suffix: "+", label: "Jobs & projects delivered" },
-  { value: 18, suffix: "", label: "States served" },
-];
+export const stats: { value: number; suffix: string; label: string }[] = [];
 
-export const testimonials = [
-  {
-    quote:
-      "Our 200HP engine failed a week before a charter season. The marine team diagnosed it, sourced the part and had us back on the water in four days.",
-    name: "Emeka N.",
-    role: "Charter boat operator",
-    division: "Marine Services",
-  },
-  {
-    quote:
-      "The agbada set was tailored to my measurements and delivered to Abuja in three days. The finish is genuinely better than what I buy abroad.",
-    name: "Tunde A.",
-    role: "Private client",
-    division: "Fashion",
-  },
-  {
-    quote:
-      "They walked me through the title documents before I paid a naira, then handled the inspection and the agency paperwork. That level of order is rare here.",
-    name: "Chiamaka O.",
-    role: "Property buyer, Lekki",
-    division: "Real Estate",
-  },
-  {
-    quote:
-      "We needed six product videos for a launch in ten days. The AI video team delivered eight, and two of them outperformed our agency's work last year.",
-    name: "Ifeoma D.",
-    role: "Brand manager, FMCG",
-    division: "AI Video Advertising",
-  },
-  {
-    quote:
-      "Fleet maintenance is now a fixed quarterly schedule with a written report after each visit. It removed a lot of guesswork from our operations.",
-    name: "Captain Bello",
-    role: "Marine fleet manager",
-    division: "Marine Services",
-  },
-];
+export const testimonials: { quote: string; name: string; role: string; division: string }[] = [];
 
 export const faqs = [
   {
@@ -177,7 +136,7 @@ export const faqs = [
   },
   {
     q: "Do you work outside Port Harcourt?",
-    a: "Yes. Our head office is in Port Harcourt, with marine work concentrated in Rivers State and the coastal states, and real estate listings available in Port Harcourt and Lagos. Fashion delivery and AI video production are handled nationwide, and we take AI video briefs from international brands.",
+    a: "Yes. Our head office is in Port Harcourt, with marine work concentrated in Rivers State and the coastal states, and real estate listings available in Port Harcourt and Lagos. Fashion delivery and our fashion and property services are available as described on their respective pages. AI Operator service details are being confirmed.",
   },
   {
     q: "How do quotations work?",

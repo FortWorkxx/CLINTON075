@@ -9,7 +9,7 @@ import { properties } from "@/data/properties";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "Our Divisions — Marine, Fashion, Real Estate & AI Video",
+  title: "Our Divisions — Marine, Real Estate, Fashion & AI Operator",
   description:
     "Compare the four Clinton Global divisions: what each does, how each transaction works, and how to engage each team.",
   alternates: { canonical: "/services" },
@@ -19,7 +19,7 @@ const howToEngage = [
   { d: "Marine Services", t: "Service booking or written quotation", href: "/marine/booking", cta: "Book a service" },
   { d: "Fashion", t: "Direct purchase online, or bespoke by appointment", href: "/fashion", cta: "Shop the store" },
   { d: "Real Estate", t: "Property enquiry and inspection booking", href: "/real-estate", cta: "Browse properties" },
-  { d: "AI Video Advertising", t: "Project quotation and consultation", href: "/ai-video/quote", cta: "Request a quote" },
+  { d: "AI Operator", t: "Discuss a digital operations requirement", href: "/ai-operator", cta: "Explore the division" },
 ];
 
 export default function ServicesPage() {
@@ -63,7 +63,7 @@ export default function ServicesPage() {
                   </ul>
                   <div className="mt-7 flex flex-wrap gap-3">
                     <Link href={d.href} className="btn-dark !px-5 !py-3 !text-[11px]">{d.cta}</Link>
-                    <Link href={d.slug === "fashion" ? "/fashion" : d.slug === "real-estate" ? "/real-estate" : d.slug === "marine" ? "/marine/services" : "/ai-video/work"} className="btn-ghost">
+                    <Link href={d.slug === "fashion" ? "/fashion" : d.slug === "real-estate" ? "/real-estate" : d.slug === "marine" ? "/marine/services" : "/ai-operator"} className="btn-ghost">
                       View detail <span>→</span>
                     </Link>
                   </div>
@@ -111,8 +111,8 @@ export default function ServicesPage() {
               { k: marineServices.length, l: "Marine service lines", href: "/marine/services" },
               { k: products.length, l: "Fashion pieces in store", href: "/fashion" },
               { k: properties.length, l: "Property listings", href: "/real-estate" },
-              { k: creativeServices.length, l: "Video production services", href: "/ai-video" },
-              { k: 3, l: "Video packages", href: "/ai-video/quote" },
+              { k: "To confirm", l: "AI Operator service scope", href: "/ai-operator" },
+              { k: "To confirm", l: "AI Operator packages", href: "/ai-operator" },
               { k: 4, l: "Business divisions", href: "/portfolio" },
             ].map((s) => (
               <Link key={s.l} href={s.href} className="group rounded-xl border border-midnight/10 bg-white p-5 transition hover:border-gold">

@@ -15,7 +15,7 @@ const divisionContacts = [
   { d: "Marine Services", note: "Engine enquiries, servicing, spare parts" },
   { d: "Fashion", note: "Orders, sizing, bespoke appointments" },
   { d: "Real Estate", note: "Listings, inspections, management" },
-  { d: "AI Video Advertising", note: "Campaign briefs and quotations" },
+  { d: "AI Operator", note: "AI and digital operations enquiries" },
 ];
 
 export default function ContactPage() {
@@ -113,7 +113,7 @@ export default function ContactPage() {
                   { name: "email", label: "Email address", type: "email", required: true },
                   { name: "phone", label: "Phone / WhatsApp", type: "tel", required: true },
                   { name: "company", label: "Company (optional)" },
-                  { name: "division", label: "Division", type: "select", required: true, options: ["Marine Services", "Fashion", "Real Estate", "AI Video Advertising", "General / other"] },
+                  { name: "division", label: "Division", type: "select", required: true, options: ["Marine Services", "Fashion", "Real Estate", "AI Operator", "General / other"] },
                   { name: "subject", label: "Subject", required: true },
                   { name: "message", label: "Message", type: "textarea", required: true },
                 ]}

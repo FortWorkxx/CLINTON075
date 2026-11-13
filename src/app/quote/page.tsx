@@ -7,7 +7,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Get a Quote — All Four Divisions",
   description:
-    "Request a written quotation for marine services, fashion, real estate or AI video advertising. One form covers all four Clinton Global divisions.",
+    "Request a written quotation for marine services, fashion, real estate or the proposed AI Operator division. One form covers all four Clinton Global divisions.",
   alternates: { canonical: "/quote" },
 };
 
@@ -41,8 +41,8 @@ export default function QuotePage() {
                   { name: "company", label: "Company (if applicable)" },
                   { name: "email", label: "Email address", type: "email", required: true },
                   { name: "phone", label: "Phone / WhatsApp", type: "tel", required: true },
-                  { name: "division", label: "Which division?", type: "select", required: true, options: ["Marine Services", "Fashion", "Real Estate", "AI Video Advertising", "Two or more divisions"] },
-                  { name: "service", label: "Service required", type: "select", options: ["Engine sales", "Engine servicing / repair", "Spare parts", "Marine equipment", "Fashion order (retail)", "Bespoke tailoring", "Property purchase", "Property rental", "Property management", "Video campaign", "Other"] },
+                  { name: "division", label: "Which division?", type: "select", required: true, options: ["Marine Services", "Fashion", "Real Estate", "AI Operator", "Two or more divisions"] },
+                  { name: "service", label: "Service required", type: "select", options: ["Engine sales", "Engine servicing / repair", "Spare parts", "Marine equipment", "Fashion order (retail)", "Bespoke tailoring", "Property purchase", "Property rental", "Property management", "AI Operator enquiry (scope to confirm)", "Other"] },
                   { name: "timeline", label: "Timeline", type: "select", options: ["Immediately", "Within 2 weeks", "Within 1 month", "1–3 months", "Exploring options"] },
                   { name: "budget", label: "Budget range", type: "select", options: ["Under ₦100,000", "₦100,000 – ₦500,000", "₦500,000 – ₦2m", "₦2m – ₦10m", "Above ₦10m", "Prefer to discuss"] },
                   { name: "message", label: "Scope and requirements", type: "textarea", required: true, placeholder: "Describe the work, quantities, location and any constraints." },
@@ -72,7 +72,7 @@ export default function QuotePage() {
                 {[
                   { l: "Marine booking & engine enquiry", h: "/marine/booking" },
                   { l: "Property inspection request", h: "/real-estate" },
-                  { l: "AI video project brief", h: "/ai-video/quote" },
+                  { l: "AI Operator enquiry", h: "/ai-operator" },
                   { l: "Bespoke fashion appointment", h: "/contact" },
                 ].map((l) => (
                   <Link key={l.h} href={l.h} className="flex items-center justify-between rounded-lg border border-midnight/10 px-4 py-2.5 text-sm text-midnight/70 transition hover:border-gold hover:text-gold-dark">
